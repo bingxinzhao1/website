@@ -1,0 +1,388 @@
+/* Bingxin Zhao — personal site. Layout adapted from Jon Barron's academic template. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 22px;
+  scroll-margin-top: 80px;
+}
+
+p {
+  margin: 14px 0;
+}
+
+/* Top navigation */
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #eee;
+  backdrop-filter: blur(8px);
+}
+
+.top-nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+  padding: 10px 16px;
+}
+
+.top-nav-brand {
+  font-weight: 700;
+  color: #111;
+  font-size: 15px;
+}
+
+.top-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+}
+
+.top-nav-links a {
+  color: #111;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 14px;
+}
+
+.top-nav-links a:hover,
+.top-nav-links a:focus {
+  background-color: #f2f2f2;
+  color: #f09228;
+}
+
+/* Page column */
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 16px;
+}
+
+/* Introduction */
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  flex: 63 1 420px;
+  min-width: 0;
+  padding: 2.5%;
+}
+
+.intro-photo {
+  flex: 37 1 220px;
+  max-width: 333px;
+  padding: 2.5%;
+}
+
+.intro-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name {
+  padding-top: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.intro-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 10px;
+}
+
+/* Research */
+
+.directions {
+  margin: 0 0 14px;
+  padding-left: 28px;
+}
+
+.directions li + li {
+  margin-top: 6px;
+}
+
+.rule {
+  height: 1px;
+  background-color: #eee;
+}
+
+.pub-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.pub-filter-bar .label {
+  font-weight: 600;
+}
+
+.pub-filter-bar button {
+  padding: 6px 12px;
+  border-radius: 18px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  color: #333;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  transition: 0.15s;
+}
+
+.pub-filter-bar button[aria-pressed='true'] {
+  border-color: #111;
+  background-color: #111;
+  color: #fff;
+}
+
+.pub-tag-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 12px;
+}
+
+.pub-tag-bar[hidden] {
+  display: none;
+}
+
+.pub-tag-bar button {
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12.5px;
+  transition: 0.15s;
+}
+
+.pub-tag-bar button[aria-pressed='true'] {
+  border-color: #666;
+  background-color: #e0e0e0;
+}
+
+.pub-card {
+  display: flex;
+  gap: 12px;
+  border: 1px solid #eee;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.pub-card-left {
+  flex: 0 0 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pub-card-left img {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.pub-card-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.papertitle {
+  font-weight: 700;
+}
+
+.pub-authors {
+  font-style: italic;
+}
+
+.pub-tag {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #efefef;
+  font-size: 12px;
+}
+
+.pub-venue {
+  margin-top: 6px;
+}
+
+.pub-highlights {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  color: #333;
+}
+
+.pub-highlights li + li {
+  margin-top: 2px;
+}
+
+.pub-links {
+  margin-top: 6px;
+}
+
+.pub-year-heading {
+  margin: 18px 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pub-year-heading:first-child {
+  margin-top: 0;
+}
+
+/* Bordered cards used by Platforms and Group */
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.card {
+  padding: 12px 14px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4px 12px;
+}
+
+.card-row > .card-main {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.card-sub {
+  margin-top: 2px;
+  color: #333;
+}
+
+.card-side {
+  color: #666;
+  white-space: nowrap;
+}
+
+.subhead {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.people {
+  margin-top: 6px;
+  column-width: 380px;
+  column-gap: 28px;
+}
+
+.people > div {
+  padding: 2px 0;
+  break-inside: avoid;
+}
+
+.people .affil {
+  color: #666;
+}
+
+.footer {
+  padding: 24px 16px 40px;
+  text-align: right;
+  color: #666;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .top-nav-inner {
+    justify-content: center;
+  }
+
+  .top-nav-links {
+    justify-content: center;
+    gap: 0 4px;
+  }
+
+  .intro-photo {
+    max-width: 240px;
+  }
+
+  .pub-card-left {
+    flex-basis: 30%;
+  }
+}
