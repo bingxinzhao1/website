@@ -161,7 +161,7 @@ window.PUBLICATIONS = [
     "topic": "Inter-organ Connections",
     "selected": true,
     "highlights": [
-      "Featured by Editors’ Highlights in Translational and Clinical Research (the 50 best papers recently published in this area)."
+      "Featured by <a href=\"https://www.nature.com/collections/ecgchegdhe\">Editors’ Highlights in Translational and Clinical Research</a> (the 50 best papers recently published in this area)."
     ],
     "image": "images/teasers/plasma-proteomics.svg",
     "links": [
