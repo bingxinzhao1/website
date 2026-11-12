@@ -22,6 +22,7 @@ GitHub Pages / DNS steps.
 - Topic tags match the four research directions, in the order set by `window.TOPIC_ORDER`
   in publications.js: Genetics of the Human Brain; Inter-organ Connections; Statistical
   Methods and Theory with Biomedical Applications; AI, Agentic Platforms, and Cloud Computing.
+- A News item about a paper ends with a one-sentence summary of the paper.
 - Writing style: American English, serial commas, no em dashes.
 - `cv.pdf` is intentionally not in the repo until a public version (no phone number or
   grant amounts) is supplied. The CV links point to it.
