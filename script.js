@@ -35,7 +35,16 @@
     }
 
     var right = el('div', 'pub-card-right');
-    right.appendChild(el('div', 'papertitle', p.title));
+    var links = (p.links || []).slice();
+    var main = links.filter(function (l) { return l.label === 'Paper'; })[0] ||
+      links.filter(function (l) { return l.label === 'Preprint'; })[0];
+    var title = el(main ? 'a' : 'span', 'papertitle', p.title);
+    if (main) {
+      title.href = main.url;
+      title.target = '_blank';
+      title.rel = 'noopener noreferrer';
+    }
+    right.appendChild(title);
 
     var authors = el('div', 'pub-authors');
     String(p.authors || '').split(ME).forEach(function (part, i) {
@@ -44,13 +53,19 @@
     });
     right.appendChild(authors);
 
-    var tagWrap = el('div');
-    tagWrap.appendChild(el('span', 'pub-tag', p.topic));
-    right.appendChild(tagWrap);
-
     var venue = el('div', 'pub-venue');
-    venue.appendChild(el('b', null, p.venue));
+    venue.appendChild(el('i', null, p.venue));
     venue.appendChild(document.createTextNode(', ' + p.year));
+    links.forEach(function (l) {
+      if (l === main) return;
+      venue.appendChild(document.createTextNode(' / '));
+      var a = el('a', null, l.label);
+      a.href = l.url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      venue.appendChild(a);
+    });
+    if (state.mode === 'year') venue.appendChild(el('span', 'pub-topic', p.topic));
     right.appendChild(venue);
 
     if (p.highlights && p.highlights.length) {
@@ -66,17 +81,6 @@
       });
       right.appendChild(list);
     }
-
-    var links = el('div', 'pub-links');
-    (p.links || []).forEach(function (l, i) {
-      if (i > 0) links.appendChild(document.createTextNode(' / '));
-      var a = el('a', null, l.label);
-      a.href = l.url;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      links.appendChild(a);
-    });
-    right.appendChild(links);
 
     article.appendChild(right);
     return article;

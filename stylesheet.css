@@ -223,26 +223,23 @@ p {
 
 .pub-card {
   display: flex;
-  gap: 12px;
-  border: 1px solid #eee;
-  margin-bottom: 8px;
-  border-radius: 10px;
-  padding: 10px 12px;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pub-card:last-child {
+  border-bottom: 0;
 }
 
 .pub-card-left {
   flex: 0 0 22%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .pub-card-left img {
   display: block;
   width: 100%;
-  max-width: 150px;
+  max-width: 160px;
   height: auto;
   border-radius: 6px;
 }
@@ -253,42 +250,48 @@ p {
 }
 
 .papertitle {
+  font-size: 15px;
   font-weight: 700;
+  line-height: 1.35;
+}
+
+span.papertitle {
+  color: #111;
 }
 
 .pub-authors {
-  font-style: italic;
-}
-
-.pub-tag {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 2px 6px;
-  border-radius: 4px;
-  background-color: #efefef;
-  font-size: 12px;
-}
-
-.pub-venue {
-  margin-top: 6px;
-}
-
-.pub-highlights {
-  margin: 4px 0 0;
-  padding-left: 18px;
+  margin-top: 3px;
   color: #333;
 }
 
-.pub-highlights li + li {
+.pub-venue {
   margin-top: 2px;
 }
 
-.pub-links {
-  margin-top: 6px;
+.pub-topic {
+  margin-left: 10px;
+  color: #888;
+  font-size: 12.5px;
+}
+
+.pub-highlights {
+  margin: 8px 0 2px;
+  padding: 4px 0 4px 12px;
+  border-left: 3px solid #f5c48a;
+  list-style: none;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.pub-highlights li + li {
+  margin-top: 3px;
 }
 
 .pub-year-heading {
-  margin: 18px 0 8px;
+  margin: 26px 0 2px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #111;
   font-size: 16px;
   font-weight: 700;
 }
