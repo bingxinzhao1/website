@@ -20,8 +20,8 @@ GitHub Pages / DNS steps.
   published or accepted papers. Preprint platforms (PASS, TigerAI) stay under Platforms.
 - Topic tags match the four research directions. Their order on the paper list is set by
   `window.TOPIC_ORDER` in publications.js: Inter-organ Connections; Genetics of the Human
-  Brain; Statistical Methods and Theory with Biomedical Applications; AI, Agentic
-  Platforms, and Cloud Computing.
+  Brain; Statistical Methods and Theory with Biomedical Applications; AI for Science and
+  Research Platforms.
 - Paper highlights: one item per line (one array entry each), never joined with ";".
 - A News item about a paper ends with a one-sentence summary of the paper.
 - Writing style: American English, serial commas, no em dashes.

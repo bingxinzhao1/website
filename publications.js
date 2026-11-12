@@ -37,7 +37,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao",
     "venue": "Nature Genetics",
     "year": 2026,
-    "topic": "AI, Agentic Platforms, and Cloud Computing",
+    "topic": "AI for Science and Research Platforms",
     "highlights": [],
     "image": "images/teasers/ai-co-scientists.svg",
     "links": [
@@ -101,7 +101,7 @@ window.PUBLICATIONS = [
     "authors": "Buxin Su et al.",
     "venue": "Nature Computational Science",
     "year": 2026,
-    "topic": "AI, Agentic Platforms, and Cloud Computing",
+    "topic": "AI for Science and Research Platforms",
     "highlights": [
       "Research highlight <a href=\"https://www.nature.com/articles/d41586-026-00059-0\">by Nature Index</a>.",
       "Highlighted by <a href=\"https://www.nature.com/articles/s43588-026-01046-1\">Nature Computational Science News &amp; Views</a>.",
@@ -250,7 +250,7 @@ window.PUBLICATIONS = [
     "authors": "Yujue Li et al.",
     "venue": "Journal of the American Statistical Association",
     "year": 2026,
-    "topic": "AI, Agentic Platforms, and Cloud Computing",
+    "topic": "AI for Science and Research Platforms",
     "highlights": [],
     "image": "images/teasers/biga.svg",
     "links": [
@@ -346,7 +346,7 @@ window.PUBLICATIONS = [
     "authors": "Jin Jin et al.",
     "venue": "Nature Methods (accepted)",
     "year": 2026,
-    "topic": "AI, Agentic Platforms, and Cloud Computing",
+    "topic": "AI for Science and Research Platforms",
     "highlights": [
       "Recognized by the 2025 ASHG Reviewers’ Choice Award (top 10%)."
     ],
@@ -369,5 +369,5 @@ window.TOPIC_ORDER = [
   "Inter-organ Connections",
   "Genetics of the Human Brain",
   "Statistical Methods and Theory with Biomedical Applications",
-  "AI, Agentic Platforms, and Cloud Computing"
+  "AI for Science and Research Platforms"
 ];
