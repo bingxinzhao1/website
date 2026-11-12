@@ -33,6 +33,6 @@ GitHub Pages / DNS steps.
   standards). No red: it clashed with the blue. Paper cards are boxed; the title links to the paper.
 - Update the footer's "Last updated" month when making content changes.
 - Writing style: American English, serial commas, no em dashes.
-- `cv.pdf` is intentionally not in the repo until a public version (no phone number or
-  grant amounts) is supplied. The CV links point to it.
+- `cv.pdf` is the public CV (no grant amounts). Replace it with a file of the same name to
+  update; never commit the full internal CV.
 - Do not add a CNAME file until DNS for bingxinzhao.com is ready to switch from Google Sites.
