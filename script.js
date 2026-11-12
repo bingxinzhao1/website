@@ -1,5 +1,5 @@
 /* Renders the publication list from publications.js and wires the
-   "Show: by Topic / by Year" controls. */
+   "Featured papers: by Topic / by Year" controls. */
 (function () {
   'use strict';
 
