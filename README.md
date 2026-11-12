@@ -13,6 +13,8 @@ A static, single-page site. No build step: open `index.html` in a browser to pre
 | `images/profile.jpg` | Profile photo (640 x 640, shown as a circle) |
 | `images/favicon.svg`, `images/apple-touch-icon.png` | Browser-tab and phone home-screen icons |
 | `cv.pdf` | The file behind both CV links |
+| `robots.txt`, `sitemap.xml` | Tell search engines what to index; update `lastmod` in the sitemap after big changes |
+| `CNAME` | The custom domain, www.bingxinzhao.com |
 
 ## Common edits
 
