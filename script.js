@@ -60,7 +60,6 @@
 
     var venue = el('div', 'pub-venue');
     venue.appendChild(el('i', null, p.venue));
-    venue.appendChild(document.createTextNode(', ' + p.year));
     links.forEach(function (l) {
       if (l === main) return;
       venue.appendChild(document.createTextNode(' / '));
@@ -73,6 +72,7 @@
     right.appendChild(venue);
 
     var tagWrap = el('div', 'pub-tags');
+    tagWrap.appendChild(el('span', 'pub-tag pub-tag-year', String(p.year)));
     topicsOf(p).forEach(function (t) { tagWrap.appendChild(el('span', 'pub-tag', t)); });
     right.appendChild(tagWrap);
 

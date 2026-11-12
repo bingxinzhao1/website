@@ -306,6 +306,10 @@ span.papertitle {
   font-size: 12px;
 }
 
+.pub-tag-year {
+  font-weight: 700;
+}
+
 .pub-highlights {
   margin: 8px 0 2px;
   padding: 4px 0 4px 12px;
