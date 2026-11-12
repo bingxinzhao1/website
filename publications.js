@@ -110,7 +110,7 @@ window.PUBLICATIONS = [
     ]
   },
   {
-    "title": "Multi-organ imaging genetics: Toward an integrated view of brain, body and brain diseases",
+    "title": "Multi-organ imaging genetics: towards an integrated view of brain, body and brain diseases",
     "authors": "Zirui Fan and Bingxin Zhao",
     "venue": "Nature Reviews Neurology",
     "year": 2026,
