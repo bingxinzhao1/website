@@ -250,8 +250,8 @@ window.PUBLICATIONS = [
     "image": "images/teasers/block-wise.svg",
     "links": [
       {
-        "label": "Preprint",
-        "url": "https://arxiv.org/abs/2203.12003"
+        "label": "Paper",
+        "url": "https://doi.org/10.1214/24-AOS2378"
       }
     ]
   },
@@ -286,8 +286,8 @@ window.PUBLICATIONS = [
     "image": "images/teasers/trans-ancestry.svg",
     "links": [
       {
-        "label": "Preprint",
-        "url": "https://arxiv.org/abs/2203.12154"
+        "label": "Paper",
+        "url": "https://doi.org/10.1080/01621459.2024.2344703"
       }
     ]
   },
