@@ -46,21 +46,6 @@ window.PUBLICATIONS = [
     ]
   },
   {
-    "title": "Common variants contribute to intrinsic human brain functional networks",
-    "authors": "Bingxin Zhao et al.",
-    "venue": "Nature Genetics",
-    "year": 2022,
-    "topic": "Genetics of the Human Brain",
-    "highlights": [],
-    "image": "images/teasers/functional-networks.svg",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "https://doi.org/10.1038/s41588-022-01039-6"
-      }
-    ]
-  },
-  {
     "title": "Common genetic variation influencing human white matter microstructure",
     "authors": "Bingxin Zhao et al.",
     "venue": "Science",
@@ -74,6 +59,21 @@ window.PUBLICATIONS = [
       {
         "label": "Paper",
         "url": "https://science.sciencemag.org/content/372/6548/eabf3736"
+      }
+    ]
+  },
+  {
+    "title": "Common variants contribute to intrinsic human brain functional networks",
+    "authors": "Bingxin Zhao et al.",
+    "venue": "Nature Genetics",
+    "year": 2022,
+    "topic": "Genetics of the Human Brain",
+    "highlights": [],
+    "image": "images/teasers/functional-networks.svg",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1038/s41588-022-01039-6"
       }
     ]
   },
@@ -359,10 +359,10 @@ window.PUBLICATIONS = [
   }
 ];
 
-/* Order of the "by Topic" buttons; matches the four research directions. */
+/* Order of the "by Topic" buttons and groups. */
 window.TOPIC_ORDER = [
-  "Genetics of the Human Brain",
   "Inter-organ Connections",
+  "Genetics of the Human Brain",
   "Statistical Methods and Theory with Biomedical Applications",
   "AI, Agentic Platforms, and Cloud Computing"
 ];

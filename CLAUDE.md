@@ -18,9 +18,10 @@ GitHub Pages / DNS steps.
 - Do not add "Co-senior author" labels.
 - No preprints (arXiv, bioRxiv, medRxiv) in the research directions or paper cards; only
   published or accepted papers. Preprint platforms (PASS, TigerAI) stay under Platforms.
-- Topic tags match the four research directions, in the order set by `window.TOPIC_ORDER`
-  in publications.js: Genetics of the Human Brain; Inter-organ Connections; Statistical
-  Methods and Theory with Biomedical Applications; AI, Agentic Platforms, and Cloud Computing.
+- Topic tags match the four research directions. Their order on the paper list is set by
+  `window.TOPIC_ORDER` in publications.js: Inter-organ Connections; Genetics of the Human
+  Brain; Statistical Methods and Theory with Biomedical Applications; AI, Agentic
+  Platforms, and Cloud Computing.
 - A News item about a paper ends with a one-sentence summary of the paper.
 - Writing style: American English, serial commas, no em dashes.
 - `cv.pdf` is intentionally not in the repo until a public version (no phone number or
