@@ -17,6 +17,8 @@ GitHub Pages / DNS steps.
 ## Conventions
 - Short author lists as on the old research page; "Bingxin Zhao" is bolded by script.js.
 - Do not add "Co-senior author" labels.
+- No preprints (arXiv, bioRxiv, medRxiv) in the research directions or paper cards; only
+  published or accepted papers. Preprint platforms (PASS, TigerAI) stay under Platforms.
 - Topic tags in use: Inter-organ Connections, AI and Agentic Platforms, Genetics of the
   Human Brain, Genomics and Proteomics, Statistics and Applied Math, Cloud Computing Ecosystems.
 - Writing style: American English, serial commas, no em dashes.

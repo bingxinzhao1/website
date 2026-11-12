@@ -7,7 +7,7 @@ A static, single-page site. No build step: open `index.html` in a browser to pre
 | File | What it holds |
 | --- | --- |
 | `index.html` | All page text: bio, news, research directions, platforms, group |
-| `publications.js` | The paper list (30 entries). Field notes are at the top of the file |
+| `publications.js` | The paper list (21 published or accepted papers; preprints are left out). Field notes are at the top of the file |
 | `script.js` | Draws the paper cards and runs the Selected / by Year / by Topic buttons |
 | `stylesheet.css` | All styling |
 | `images/profile.jpg` | Profile photo (640 x 640, shown as a circle) |
