@@ -22,6 +22,7 @@ GitHub Pages / DNS steps.
   `window.TOPIC_ORDER` in publications.js: Inter-organ Connections; Genetics of the Human
   Brain; Statistical Methods and Theory with Biomedical Applications; AI, Agentic
   Platforms, and Cloud Computing.
+- Paper highlights: one item per line (one array entry each), never joined with ";".
 - A News item about a paper ends with a one-sentence summary of the paper.
 - Writing style: American English, serial commas, no em dashes.
 - `cv.pdf` is intentionally not in the repo until a public version (no phone number or

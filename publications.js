@@ -18,9 +18,11 @@ window.PUBLICATIONS = [
     "year": 2023,
     "topic": "Inter-organ Connections",
     "highlights": [
-      "Related <a href=\"https://www.science.org/doi/10.1126/science.adi2392\">perspective article in Science</a>; Research highlight <a href=\"https://doi.org/10.1038/s41569-023-00905-y\">by Nature Reviews Cardiology</a>.",
+      "Related <a href=\"https://www.science.org/doi/10.1126/science.adi2392\">perspective article in Science</a>.",
+      "Research highlight <a href=\"https://doi.org/10.1038/s41569-023-00905-y\">by Nature Reviews Cardiology</a>.",
       "Selected as <a href=\"https://www.ukbiobank.ac.uk/research-stories/10-research-findings-from-our-imaging-projects-first-decade/\">one of the top 10 research findings</a> by the Chief Scientist of UK Biobank from the first decade of the UK Biobank Imaging Project.",
-      "Recognized by the <a href=\"https://www.ukbiobank.ac.uk/news/uk-biobank-unveils-winner-of-the-scientific-impact-awards-2025-at-annual-conference/\">inaugural UK Biobank Scientific Impact Awards</a>; Interviewed by <a href=\"https://www.ukbiobank.ac.uk/research-stories/how-keeping-the-heart-healthy-could-benefit-the-brain/\">UK Biobank</a>."
+      "Recognized by the <a href=\"https://www.ukbiobank.ac.uk/news/uk-biobank-unveils-winner-of-the-scientific-impact-awards-2025-at-annual-conference/\">inaugural UK Biobank Scientific Impact Awards</a>.",
+      "Interviewed by <a href=\"https://www.ukbiobank.ac.uk/research-stories/how-keeping-the-heart-healthy-could-benefit-the-brain/\">UK Biobank</a>."
     ],
     "image": "images/teasers/heart-brain.svg",
     "links": [
@@ -101,8 +103,11 @@ window.PUBLICATIONS = [
     "year": 2026,
     "topic": "AI, Agentic Platforms, and Cloud Computing",
     "highlights": [
-      "Research highlight <a href=\"https://www.nature.com/articles/d41586-026-00059-0\">by Nature Index</a>. Highlighted by <a href=\"https://www.nature.com/articles/s43588-026-01046-1\">Nature Computational Science News &amp; Views</a>.",
-      "Highlighted by <a href=\"https://penntoday.upenn.edu/news/wharton-ai-initiative-why-authors-are-better-predicting-impact-peer-review\">Penn Today</a>. Highlighted by <a href=\"https://www.thedp.com/article/2026/09/penn-artificial-intelligence-peer-review-ranking-study-wharton\">Daily Pennsylvanian</a>. Highlighted by <a href=\"https://ai-analytics.wharton.upenn.edu/insights/why-authors-are-better-at-predicting-impact-than-peer-review/\">Wharton AI &amp; Analytics Insight</a>."
+      "Research highlight <a href=\"https://www.nature.com/articles/d41586-026-00059-0\">by Nature Index</a>.",
+      "Highlighted by <a href=\"https://www.nature.com/articles/s43588-026-01046-1\">Nature Computational Science News &amp; Views</a>.",
+      "Highlighted by <a href=\"https://penntoday.upenn.edu/news/wharton-ai-initiative-why-authors-are-better-predicting-impact-peer-review\">Penn Today</a>.",
+      "Highlighted by <a href=\"https://www.thedp.com/article/2026/09/penn-artificial-intelligence-peer-review-ranking-study-wharton\">Daily Pennsylvanian</a>.",
+      "Highlighted by <a href=\"https://ai-analytics.wharton.upenn.edu/insights/why-authors-are-better-at-predicting-impact-than-peer-review/\">Wharton AI &amp; Analytics Insight</a>."
     ],
     "image": "images/teasers/self-rankings.svg",
     "links": [
