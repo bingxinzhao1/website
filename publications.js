@@ -160,7 +160,9 @@ window.PUBLICATIONS = [
     "year": 2026,
     "topic": "Inter-organ Connections",
     "selected": true,
-    "highlights": [],
+    "highlights": [
+      "Featured by Editors’ Highlights in Translational and Clinical Research (the 50 best papers recently published in this area)."
+    ],
     "image": "images/teasers/plasma-proteomics.svg",
     "links": [
       {
