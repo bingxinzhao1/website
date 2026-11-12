@@ -21,7 +21,7 @@ window.PUBLICATIONS = [
     "year": 2023,
     "topic": "Inter-organ Connections",
     "highlights": [
-      "Featured in a <a href=\"https://www.science.org/doi/10.1126/science.adi2392\">Science Perspective</a> and a <a href=\"https://doi.org/10.1038/s41569-023-00905-y\">Nature Reviews Cardiology research highlight</a>, and covered by <a href=\"https://www.unc.edu/posts/2023/06/15/new-study-reveals-strong-connection-between-heart-and-brain-health/\">UNC News</a> and <a href=\"https://alzforum.org/node/2775541\">Alzforum</a>.",
+      "Featured in a <a href=\"https://www.science.org/doi/10.1126/science.adi2392\">Science Perspective</a> and a <a href=\"https://doi.org/10.1038/s41569-023-00905-y\">Nature Reviews Cardiology research highlight</a>, and covered by <a href=\"https://alzforum.org/node/2775541\">Alzforum</a>.",
       "Recognized by the <a href=\"https://www.ukbiobank.ac.uk/news/uk-biobank-unveils-winner-of-the-scientific-impact-awards-2025-at-annual-conference/\">inaugural UK Biobank Scientific Impact Awards</a> and named one of the <a href=\"https://www.ukbiobank.ac.uk/research-stories/10-research-findings-from-our-imaging-projects-first-decade/\">top 10 findings</a> from the first decade of UK Biobank imaging (<a href=\"https://www.ukbiobank.ac.uk/research-stories/how-keeping-the-heart-healthy-could-benefit-the-brain/\">interview</a>)."
     ],
     "links": [
