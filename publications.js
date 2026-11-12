@@ -52,7 +52,7 @@ window.PUBLICATIONS = [
     "year": 2021,
     "topic": "Genetics of the Human Brain",
     "highlights": [
-      "Featured in a <a href=\"https://www.science.org/doi/abs/10.1126/science.abj1881\">Science Perspective</a>, and covered by <a href=\"https://sph.unc.edu/?p=379968\">UNC Gillings School of Global Public Health</a> and <a href=\"https://medicalxpress.com/news/2021-06-combining-mri-imaging-brain-genetic.amp\">Medical Xpress</a>."
+      "Featured in a <a href=\"https://www.science.org/doi/abs/10.1126/science.abj1881\">Science Perspective</a>, and covered by <a href=\"https://medicalxpress.com/news/2021-06-combining-mri-imaging-brain-genetic.amp\">Medical Xpress</a>."
     ],
     "links": [
       {
