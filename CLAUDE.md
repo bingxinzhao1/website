@@ -36,4 +36,5 @@ GitHub Pages / DNS steps.
 - Writing style: American English, serial commas, no em dashes.
 - `cv.pdf` is the public CV (no grant amounts). Replace it with a file of the same name to
   update; never commit the full internal CV.
+- Google Analytics tag (G-VGGC3K9481) is in the `<head>` of index.html. Keep it.
 - `CNAME` holds www.bingxinzhao.com, the custom domain for GitHub Pages. Do not remove it.
