@@ -7,7 +7,7 @@
                     within a topic, papers appear in the order they are listed here
      highlights     bullet lines for awards and coverage; [] for none.
                     Each line is text and may contain links: <a href="https://...">label</a>
-     image          teaser image path (300 x 180 works well); "" for none
+     image          optional figure path, e.g. "images/papers/x.png" (5:3 works well); leave out for none
      links          zero or more {label, url}
 */
 window.PUBLICATIONS = [
@@ -24,7 +24,6 @@ window.PUBLICATIONS = [
       "Recognized by the <a href=\"https://www.ukbiobank.ac.uk/news/uk-biobank-unveils-winner-of-the-scientific-impact-awards-2025-at-annual-conference/\">inaugural UK Biobank Scientific Impact Awards</a>.",
       "Interviewed by <a href=\"https://www.ukbiobank.ac.uk/research-stories/how-keeping-the-heart-healthy-could-benefit-the-brain/\">UK Biobank</a>."
     ],
-    "image": "images/teasers/heart-brain.svg",
     "links": [
       {
         "label": "Paper",
@@ -39,7 +38,6 @@ window.PUBLICATIONS = [
     "year": 2026,
     "topic": "AI for Science and Research Platforms",
     "highlights": [],
-    "image": "images/teasers/ai-co-scientists.svg",
     "links": [
       {
         "label": "Paper",
@@ -56,7 +54,6 @@ window.PUBLICATIONS = [
     "highlights": [
       "Related <a href=\"https://www.science.org/doi/abs/10.1126/science.abj1881\">perspective article in Science</a>."
     ],
-    "image": "images/teasers/white-matter.svg",
     "links": [
       {
         "label": "Paper",
@@ -71,7 +68,6 @@ window.PUBLICATIONS = [
     "year": 2022,
     "topic": "Genetics of the Human Brain",
     "highlights": [],
-    "image": "images/teasers/functional-networks.svg",
     "links": [
       {
         "label": "Paper",
@@ -88,7 +84,6 @@ window.PUBLICATIONS = [
     "highlights": [
       "Cover Feature."
     ],
-    "image": "images/teasers/regional-volumes.svg",
     "links": [
       {
         "label": "Paper",
@@ -109,7 +104,6 @@ window.PUBLICATIONS = [
       "Highlighted by <a href=\"https://www.thedp.com/article/2026/09/penn-artificial-intelligence-peer-review-ranking-study-wharton\">Daily Pennsylvanian</a>.",
       "Highlighted by <a href=\"https://ai-analytics.wharton.upenn.edu/insights/why-authors-are-better-at-predicting-impact-than-peer-review/\">Wharton AI &amp; Analytics Insight</a>."
     ],
-    "image": "images/teasers/self-rankings.svg",
     "links": [
       {
         "label": "Paper",
@@ -124,7 +118,6 @@ window.PUBLICATIONS = [
     "year": 2026,
     "topic": "Inter-organ Connections",
     "highlights": [],
-    "image": "images/teasers/multi-organ-review.svg",
     "links": [
       {
         "label": "Paper",
@@ -141,7 +134,6 @@ window.PUBLICATIONS = [
     "highlights": [
       "Recognized by the 2023 ASHG Reviewers’ Choice Award (top 10%)."
     ],
-    "image": "images/teasers/multi-organ-mr.svg",
     "links": [
       {
         "label": "Paper",
@@ -158,7 +150,6 @@ window.PUBLICATIONS = [
     "highlights": [
       "Featured by <a href=\"https://www.nature.com/collections/ecgchegdhe\">Editors’ Highlights in Translational and Clinical Research</a> (the 50 best papers recently published in this area)."
     ],
-    "image": "images/teasers/plasma-proteomics.svg",
     "links": [
       {
         "label": "Paper",
@@ -175,7 +166,6 @@ window.PUBLICATIONS = [
     "highlights": [
       "Recognized by the 2024 ASHG Reviewers’ Choice Award (top 10%)."
     ],
-    "image": "images/teasers/rare-variants.svg",
     "links": [
       {
         "label": "Paper",
@@ -190,7 +180,6 @@ window.PUBLICATIONS = [
     "year": 2024,
     "topic": "Inter-organ Connections",
     "highlights": [],
-    "image": "images/teasers/eye-brain.svg",
     "links": [
       {
         "label": "Paper",
@@ -205,7 +194,6 @@ window.PUBLICATIONS = [
     "year": 2021,
     "topic": "Genetics of the Human Brain",
     "highlights": [],
-    "image": "images/teasers/twas-brain.svg",
     "links": [
       {
         "label": "Paper",
@@ -222,7 +210,6 @@ window.PUBLICATIONS = [
     "highlights": [
       "Recognized by the 2025 <a href=\"https://imstat.org/2025/03/22/bingxin-zhao-receives-2025-ims-tweedie-new-researcher-award/\">IMS (Institute of Mathematical Statistics) Tweedie New Researcher Award</a>."
     ],
-    "image": "images/teasers/ldsc-inference.svg",
     "links": [
       {
         "label": "Paper",
@@ -237,7 +224,6 @@ window.PUBLICATIONS = [
     "year": 2024,
     "topic": "Statistical Methods and Theory with Biomedical Applications",
     "highlights": [],
-    "image": "images/teasers/block-wise.svg",
     "links": [
       {
         "label": "Paper",
@@ -252,7 +238,6 @@ window.PUBLICATIONS = [
     "year": 2026,
     "topic": "AI for Science and Research Platforms",
     "highlights": [],
-    "image": "images/teasers/biga.svg",
     "links": [
       {
         "label": "Paper",
@@ -271,7 +256,6 @@ window.PUBLICATIONS = [
     "year": 2024,
     "topic": "Statistical Methods and Theory with Biomedical Applications",
     "highlights": [],
-    "image": "images/teasers/trans-ancestry.svg",
     "links": [
       {
         "label": "Paper",
@@ -288,7 +272,6 @@ window.PUBLICATIONS = [
     "highlights": [
       "Recognized by the 2020 ENAR Distinguished Student Paper Award."
     ],
-    "image": "images/teasers/genetic-correlation.svg",
     "links": [
       {
         "label": "Paper",
@@ -303,7 +286,6 @@ window.PUBLICATIONS = [
     "year": 2022,
     "topic": "Statistical Methods and Theory with Biomedical Applications",
     "highlights": [],
-    "image": "images/teasers/polygenic-risk-scores.svg",
     "links": [
       {
         "label": "Paper",
@@ -318,7 +300,6 @@ window.PUBLICATIONS = [
     "year": 2023,
     "topic": "Statistical Methods and Theory with Biomedical Applications",
     "highlights": [],
-    "image": "images/teasers/cross-trait-prediction.svg",
     "links": [
       {
         "label": "Paper",
@@ -333,7 +314,6 @@ window.PUBLICATIONS = [
     "year": 2021,
     "topic": "Genetics of the Human Brain",
     "highlights": [],
-    "image": "images/teasers/white-matter-overlap.svg",
     "links": [
       {
         "label": "Paper",
@@ -350,7 +330,6 @@ window.PUBLICATIONS = [
     "highlights": [
       "Recognized by the 2025 ASHG Reviewers’ Choice Award (top 10%)."
     ],
-    "image": "images/teasers/pennprs.svg",
     "links": [
       {
         "label": "Preprint",

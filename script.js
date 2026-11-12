@@ -22,8 +22,8 @@
   function card(p) {
     var article = el('article', 'pub-card');
 
-    var left = el('div', 'pub-card-left');
     if (p.image) {
+      var left = el('div', 'pub-card-left');
       var img = document.createElement('img');
       img.src = p.image;
       img.alt = '';
@@ -31,8 +31,8 @@
       img.width = 300;
       img.height = 180;
       left.appendChild(img);
+      article.appendChild(left);
     }
-    article.appendChild(left);
 
     var right = el('div', 'pub-card-right');
     right.appendChild(el('div', 'papertitle', p.title));

@@ -8,10 +8,11 @@ GitHub Pages / DNS steps.
 - `index.html`: bio, News (dated list, newest first), four research directions, Platforms,
   Group. Page text lives here.
 - `publications.js`: `window.PUBLICATIONS`, one object per paper (title, authors, venue,
-  year, topic, highlights[], image, links[]). Within each topic, papers appear in file order.
+  year, topic, highlights[], links[], optional image). Within each topic, papers appear in file order.
 - `script.js`: renders paper cards and the by Topic (default) / by Year views.
 - `stylesheet.css`: layout adapted from Jon Barron's template; Lato font.
-- `images/teasers/*.svg`: generated schematic image per paper (5:3).
+- Paper cards are text only. Do not add generated or decorative images; a real figure
+  from the paper may be added via the optional `image` field.
 
 ## Conventions
 - Short author lists as on the old research page; "Bingxin Zhao" is bolded by script.js.
