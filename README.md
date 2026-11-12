@@ -11,6 +11,7 @@ A static, single-page site. No build step: open `index.html` in a browser to pre
 | `script.js` | Draws the paper cards and runs the by Topic / by Year buttons |
 | `stylesheet.css` | All styling |
 | `images/profile.jpg` | Profile photo (640 x 640, shown as a circle) |
+| `images/favicon.svg`, `images/apple-touch-icon.png` | Browser-tab and phone home-screen icons |
 | `cv.pdf` | The file behind both CV links |
 
 ## Common edits

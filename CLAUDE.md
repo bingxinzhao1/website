@@ -29,6 +29,7 @@ GitHub Pages / DNS steps.
 - A News item about a paper ends with a one-sentence summary of the paper.
 - Colors: Penn Blue #011F5B with Marine Gray and Morning Yellow accents (Wharton visual
   standards). No red: it clashed with the blue. Paper cards are boxed; the title links to the paper.
+- Update the footer's "Last updated" month when making content changes.
 - Writing style: American English, serial commas, no em dashes.
 - `cv.pdf` is intentionally not in the repo until a public version (no phone number or
   grant amounts) is supplied. The CV links point to it.
