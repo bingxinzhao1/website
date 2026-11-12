@@ -6,7 +6,7 @@ A static, single-page site. No build step: open `index.html` in a browser to pre
 
 | File | What it holds |
 | --- | --- |
-| `index.html` | All page text: bio, research directions, platforms, group |
+| `index.html` | All page text: bio, news, research directions, platforms, group |
 | `publications.js` | The paper list (30 entries). Field notes are at the top of the file |
 | `script.js` | Draws the paper cards and runs the Selected / by Year / by Topic buttons |
 | `stylesheet.css` | All styling |
@@ -18,6 +18,7 @@ A static, single-page site. No build step: open `index.html` in a browser to pre
 
 - **Add a paper:** copy an entry in `publications.js`, edit it, and set `selected: true` if it should show by default.
 - **Use a real figure for a paper:** put the image in `images/teasers/` and point that paper's `image` field at it. PNG, JPG and SVG all work; 5:3 is the shape the cards expect.
+- **Add a news item:** copy the top `<li>` in the News list in `index.html`, then change the date and text.
 - **Add or move a person:** edit the lists under `<!-- Group -->` in `index.html`.
 - **Update the CV:** replace `cv.pdf` with a file of the same name.
 

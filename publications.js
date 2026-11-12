@@ -128,7 +128,12 @@ window.PUBLICATIONS = [
     "selected": true,
     "highlights": [],
     "image": "images/teasers/multi-organ-review.svg",
-    "links": []
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1038/s41582-026-01276-x"
+      }
+    ]
   },
   {
     "title": "Inferring multi-organ genetic connections using imaging and clinical data through Mendelian randomization",

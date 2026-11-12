@@ -5,7 +5,8 @@ Preview by opening `index.html` in a browser. See README.md for the file map and
 GitHub Pages / DNS steps.
 
 ## Structure
-- `index.html`: bio, four research directions, Platforms, Group. Page text lives here.
+- `index.html`: bio, News (dated list, newest first), four research directions, Platforms,
+  Group. Page text lives here.
 - `publications.js`: `window.PUBLICATIONS`, one object per paper (title, authors, venue,
   year, topic, selected, highlights[], image, links[]). Selected papers appear in the
   order of the "Selected" list on the old site's research page.

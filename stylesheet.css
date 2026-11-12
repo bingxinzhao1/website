@@ -386,3 +386,35 @@ p {
     flex-basis: 30%;
   }
 }
+
+/* News */
+
+.news {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news li {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 12px;
+  padding: 6px 0;
+}
+
+.news li + li {
+  border-top: 1px solid #f2f2f2;
+}
+
+.news-date {
+  color: #666;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .news li {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
