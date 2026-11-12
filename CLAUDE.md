@@ -19,8 +19,9 @@ GitHub Pages / DNS steps.
 - Do not add "Co-senior author" labels.
 - No preprints (arXiv, bioRxiv, medRxiv) in the research directions or paper cards; only
   published or accepted papers. Preprint platforms (PASS, TigerAI) stay under Platforms.
-- Topic tags in use: Inter-organ Connections, AI and Agentic Platforms, Genetics of the
-  Human Brain, Genomics and Proteomics, Statistics and Applied Math, Cloud Computing Ecosystems.
+- Topic tags match the four research directions, in the order set by `window.TOPIC_ORDER`
+  in publications.js: Genetics of the Human Brain; Inter-organ Connections; Statistical
+  Methods and Theory with Biomedical Applications; AI, Agentic Platforms, and Cloud Computing.
 - Writing style: American English, serial commas, no em dashes.
 - `cv.pdf` is intentionally not in the repo until a public version (no phone number or
   grant amounts) is supplied. The CV links point to it.

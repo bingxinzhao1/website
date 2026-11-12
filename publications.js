@@ -3,7 +3,7 @@
      title          paper title
      authors        short author list, e.g. "Bingxin Zhao et al." (the name "Bingxin Zhao" is shown in bold)
      venue, year    shown as "Venue, year"
-     topic          one topic; new topics appear as "by Topic" buttons automatically
+     topic          one of the four topics in window.TOPIC_ORDER at the end of this file
      selected       true to show the paper in the default "Selected" view;
                     selected papers appear in the order they are listed here
      highlights     bullet lines for awards and coverage; [] for none.
@@ -37,7 +37,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao",
     "venue": "Nature Genetics",
     "year": 2026,
-    "topic": "AI and Agentic Platforms",
+    "topic": "AI, Agentic Platforms, and Cloud Computing",
     "selected": true,
     "highlights": [],
     "image": "images/teasers/ai-co-scientists.svg",
@@ -105,7 +105,7 @@ window.PUBLICATIONS = [
     "authors": "Buxin Su et al.",
     "venue": "Nature Computational Science",
     "year": 2026,
-    "topic": "AI and Agentic Platforms",
+    "topic": "AI, Agentic Platforms, and Cloud Computing",
     "selected": true,
     "highlights": [
       "Research highlight <a href=\"https://www.nature.com/articles/d41586-026-00059-0\">by Nature Index</a>. Highlighted by <a href=\"https://www.nature.com/articles/s43588-026-01046-1\">Nature Computational Science News &amp; Views</a>.",
@@ -158,7 +158,7 @@ window.PUBLICATIONS = [
     "authors": "Zirui Fan et al.",
     "venue": "Nature Communications",
     "year": 2026,
-    "topic": "Genomics and Proteomics",
+    "topic": "Inter-organ Connections",
     "selected": true,
     "highlights": [],
     "image": "images/teasers/plasma-proteomics.svg",
@@ -208,7 +208,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao et al.",
     "venue": "Nature Communications",
     "year": 2021,
-    "topic": "Genomics and Proteomics",
+    "topic": "Genetics of the Human Brain",
     "selected": true,
     "highlights": [],
     "image": "images/teasers/twas-brain.svg",
@@ -224,7 +224,7 @@ window.PUBLICATIONS = [
     "authors": "Fei Xue and Bingxin Zhao",
     "venue": "Annals of Statistics",
     "year": 2025,
-    "topic": "Statistics and Applied Math",
+    "topic": "Statistical Methods and Theory with Biomedical Applications",
     "selected": true,
     "highlights": [
       "Recognized by the 2025 <a href=\"https://imstat.org/2025/03/22/bingxin-zhao-receives-2025-ims-tweedie-new-researcher-award/\">IMS (Institute of Mathematical Statistics) Tweedie New Researcher Award</a>."
@@ -242,7 +242,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao, Shurong Zheng, and Hongtu Zhu",
     "venue": "Annals of Statistics",
     "year": 2024,
-    "topic": "Statistics and Applied Math",
+    "topic": "Statistical Methods and Theory with Biomedical Applications",
     "selected": true,
     "highlights": [],
     "image": "images/teasers/block-wise.svg",
@@ -258,7 +258,7 @@ window.PUBLICATIONS = [
     "authors": "Yujue Li et al.",
     "venue": "Journal of the American Statistical Association",
     "year": 2026,
-    "topic": "Cloud Computing Ecosystems",
+    "topic": "AI, Agentic Platforms, and Cloud Computing",
     "selected": true,
     "highlights": [],
     "image": "images/teasers/biga.svg",
@@ -278,7 +278,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao, Xiaochen Yang, and Hongtu Zhu",
     "venue": "Journal of the American Statistical Association",
     "year": 2024,
-    "topic": "Statistics and Applied Math",
+    "topic": "Statistical Methods and Theory with Biomedical Applications",
     "selected": true,
     "highlights": [],
     "image": "images/teasers/trans-ancestry.svg",
@@ -294,7 +294,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao and Hongtu Zhu",
     "venue": "Journal of the American Statistical Association",
     "year": 2022,
-    "topic": "Statistics and Applied Math",
+    "topic": "Statistical Methods and Theory with Biomedical Applications",
     "selected": true,
     "highlights": [
       "Recognized by the 2020 ENAR Distinguished Student Paper Award."
@@ -312,7 +312,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao and Fei Zou",
     "venue": "Biometrics",
     "year": 2022,
-    "topic": "Statistics and Applied Math",
+    "topic": "Statistical Methods and Theory with Biomedical Applications",
     "selected": true,
     "highlights": [],
     "image": "images/teasers/polygenic-risk-scores.svg",
@@ -328,7 +328,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao, Fei Zou, and Hongtu Zhu",
     "venue": "Biometrics",
     "year": 2023,
-    "topic": "Statistics and Applied Math",
+    "topic": "Statistical Methods and Theory with Biomedical Applications",
     "selected": true,
     "highlights": [],
     "image": "images/teasers/cross-trait-prediction.svg",
@@ -360,7 +360,7 @@ window.PUBLICATIONS = [
     "authors": "Jin Jin et al.",
     "venue": "Nature Methods (accepted)",
     "year": 2026,
-    "topic": "Cloud Computing Ecosystems",
+    "topic": "AI, Agentic Platforms, and Cloud Computing",
     "selected": false,
     "highlights": [
       "Recognized by the 2025 ASHG Reviewers’ Choice Award (top 10%)."
@@ -377,4 +377,12 @@ window.PUBLICATIONS = [
       }
     ]
   }
+];
+
+/* Order of the "by Topic" buttons; matches the four research directions. */
+window.TOPIC_ORDER = [
+  "Genetics of the Human Brain",
+  "Inter-organ Connections",
+  "Statistical Methods and Theory with Biomedical Applications",
+  "AI, Agentic Platforms, and Cloud Computing"
 ];

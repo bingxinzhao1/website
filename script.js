@@ -83,11 +83,13 @@
   }
 
   function topics() {
-    var seen = [];
+    var seen = (window.TOPIC_ORDER || []).slice();
     pubs.forEach(function (p) {
       if (seen.indexOf(p.topic) < 0) seen.push(p.topic);
     });
-    return seen;
+    return seen.filter(function (t) {
+      return pubs.some(function (p) { return p.topic === t; });
+    });
   }
 
   function renderList() {
@@ -109,8 +111,12 @@
         listEl.appendChild(card(x.p));
       });
     } else {
-      pubs.filter(function (p) { return state.topic === 'all' || p.topic === state.topic; })
-        .forEach(function (p) { listEl.appendChild(card(p)); });
+      topics().forEach(function (t) {
+        if (state.topic !== 'all' && state.topic !== t) return;
+        if (state.topic === 'all') listEl.appendChild(el('h3', 'pub-year-heading', t));
+        pubs.filter(function (p) { return p.topic === t; })
+          .forEach(function (p) { listEl.appendChild(card(p)); });
+      });
     }
   }
 
