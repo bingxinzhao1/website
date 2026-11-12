@@ -19,6 +19,10 @@
     return node;
   }
 
+  function topicsOf(p) {
+    return Array.isArray(p.topic) ? p.topic : [p.topic];
+  }
+
   function card(p) {
     var article = el('article', 'pub-card');
 
@@ -65,8 +69,11 @@
       a.rel = 'noopener noreferrer';
       venue.appendChild(a);
     });
-    if (state.mode === 'year') venue.appendChild(el('span', 'pub-topic', p.topic));
     right.appendChild(venue);
+
+    var tagWrap = el('div', 'pub-tags');
+    topicsOf(p).forEach(function (t) { tagWrap.appendChild(el('span', 'pub-tag', t)); });
+    right.appendChild(tagWrap);
 
     if (p.highlights && p.highlights.length) {
       var list = el('ul', 'pub-highlights');
@@ -89,10 +96,12 @@
   function topics() {
     var seen = (window.TOPIC_ORDER || []).slice();
     pubs.forEach(function (p) {
-      if (seen.indexOf(p.topic) < 0) seen.push(p.topic);
+      topicsOf(p).forEach(function (t) {
+        if (seen.indexOf(t) < 0) seen.push(t);
+      });
     });
     return seen.filter(function (t) {
-      return pubs.some(function (p) { return p.topic === t; });
+      return pubs.some(function (p) { return topicsOf(p).indexOf(t) >= 0; });
     });
   }
 
@@ -114,7 +123,7 @@
       topics().forEach(function (t) {
         if (state.topic !== 'all' && state.topic !== t) return;
         if (state.topic === 'all') listEl.appendChild(el('h3', 'pub-year-heading', t));
-        pubs.filter(function (p) { return p.topic === t; })
+        pubs.filter(function (p) { return topicsOf(p).indexOf(t) >= 0; })
           .forEach(function (p) { listEl.appendChild(card(p)); });
       });
     }

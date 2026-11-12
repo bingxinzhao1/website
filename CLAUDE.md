@@ -15,16 +15,20 @@ GitHub Pages / DNS steps.
   from the paper may be added via the optional `image` field.
 
 ## Conventions
-- Short author lists as on the old research page; "Bingxin Zhao" is bolded by script.js.
+- Short author lists: "Bingxin Zhao et al." when first author; "First Author, …, Bingxin Zhao"
+  when last (corresponding) author. "Bingxin Zhao" is bolded by script.js.
 - Do not add "Co-senior author" labels.
 - No preprints (arXiv, bioRxiv, medRxiv) in the research directions or paper cards; only
   published or accepted papers. Preprint platforms (PASS, TigerAI) stay under Platforms.
 - Topic tags match the four research directions. Their order on the paper list is set by
   `window.TOPIC_ORDER` in publications.js: Inter-organ Connections; Genetics of the Human
-  Brain; Statistical Methods and Theory with Biomedical Applications; AI for Science and
-  Research Platforms.
-- Paper highlights: one item per line (one array entry each), never joined with ";".
+  Brain; Statistical Methods and Theory; AI for Science and Research Platforms. A paper may
+  list two topics (`topic` as an array); it then appears under both.
+- Paper highlights: short, at most two lines per paper, grouped by kind (journal features in
+  one line, press coverage in another, awards as "YEAR Award Name"). Keep every link.
 - A News item about a paper ends with a one-sentence summary of the paper.
+- Colors: Penn Blue #011F5B and Penn Red #990000, with Marine Gray and Morning Yellow
+  accents (Wharton visual standards). Paper cards are boxed; the title links to the paper.
 - Writing style: American English, serial commas, no em dashes.
 - `cv.pdf` is intentionally not in the repo until a public version (no phone number or
   grant amounts) is supplied. The CV links point to it.

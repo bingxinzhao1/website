@@ -1,9 +1,11 @@
 /* Publication list for the Research section.
    To add a paper, copy one entry and edit it. Fields:
      title          paper title
-     authors        short author list, e.g. "Bingxin Zhao et al." (the name "Bingxin Zhao" is shown in bold)
+     authors        short author list: "Bingxin Zhao et al." when first author, "First Author, …, Bingxin Zhao"
+                    when last author (the name "Bingxin Zhao" is shown in bold)
      venue, year    shown as "Venue, year"
-     topic          one of the four topics in window.TOPIC_ORDER at the end of this file;
+     topic          one topic from window.TOPIC_ORDER at the end of this file, or a list such as
+                    ["Inter-organ Connections", "Genetics of the Human Brain"] for a paper in two;
                     within a topic, papers appear in the order they are listed here
      highlights     bullet lines for awards and coverage; [] for none.
                     Each line is text and may contain links: <a href="https://...">label</a>
@@ -18,11 +20,8 @@ window.PUBLICATIONS = [
     "year": 2023,
     "topic": "Inter-organ Connections",
     "highlights": [
-      "Related <a href=\"https://www.science.org/doi/10.1126/science.adi2392\">perspective article in Science</a>.",
-      "Research highlight <a href=\"https://doi.org/10.1038/s41569-023-00905-y\">by Nature Reviews Cardiology</a>.",
-      "Selected as <a href=\"https://www.ukbiobank.ac.uk/research-stories/10-research-findings-from-our-imaging-projects-first-decade/\">one of the top 10 research findings</a> by the Chief Scientist of UK Biobank from the first decade of the UK Biobank Imaging Project.",
-      "Recognized by the <a href=\"https://www.ukbiobank.ac.uk/news/uk-biobank-unveils-winner-of-the-scientific-impact-awards-2025-at-annual-conference/\">inaugural UK Biobank Scientific Impact Awards</a>.",
-      "Interviewed by <a href=\"https://www.ukbiobank.ac.uk/research-stories/how-keeping-the-heart-healthy-could-benefit-the-brain/\">UK Biobank</a>."
+      "Featured in a <a href=\"https://www.science.org/doi/10.1126/science.adi2392\">Science Perspective</a> and a <a href=\"https://doi.org/10.1038/s41569-023-00905-y\">Nature Reviews Cardiology research highlight</a>.",
+      "Recognized by the <a href=\"https://www.ukbiobank.ac.uk/news/uk-biobank-unveils-winner-of-the-scientific-impact-awards-2025-at-annual-conference/\">inaugural UK Biobank Scientific Impact Awards</a> and named one of the <a href=\"https://www.ukbiobank.ac.uk/research-stories/10-research-findings-from-our-imaging-projects-first-decade/\">top 10 findings</a> from the first decade of UK Biobank imaging (<a href=\"https://www.ukbiobank.ac.uk/research-stories/how-keeping-the-heart-healthy-could-benefit-the-brain/\">interview</a>)."
     ],
     "links": [
       {
@@ -52,7 +51,7 @@ window.PUBLICATIONS = [
     "year": 2021,
     "topic": "Genetics of the Human Brain",
     "highlights": [
-      "Related <a href=\"https://www.science.org/doi/abs/10.1126/science.abj1881\">perspective article in Science</a>."
+      "Featured in a <a href=\"https://www.science.org/doi/abs/10.1126/science.abj1881\">Science Perspective</a>."
     ],
     "links": [
       {
@@ -82,7 +81,7 @@ window.PUBLICATIONS = [
     "year": 2019,
     "topic": "Genetics of the Human Brain",
     "highlights": [
-      "Cover Feature."
+      "Featured on the cover of Nature Genetics."
     ],
     "links": [
       {
@@ -93,16 +92,13 @@ window.PUBLICATIONS = [
   },
   {
     "title": "Self-rankings as a predictor of scientific impact beyond peer review",
-    "authors": "Buxin Su et al.",
+    "authors": "Buxin Su, …, Bingxin Zhao, Weijie Su",
     "venue": "Nature Computational Science",
     "year": 2026,
     "topic": "AI for Science and Research Platforms",
     "highlights": [
-      "Research highlight <a href=\"https://www.nature.com/articles/d41586-026-00059-0\">by Nature Index</a>.",
-      "Highlighted by <a href=\"https://www.nature.com/articles/s43588-026-01046-1\">Nature Computational Science News &amp; Views</a>.",
-      "Highlighted by <a href=\"https://penntoday.upenn.edu/news/wharton-ai-initiative-why-authors-are-better-predicting-impact-peer-review\">Penn Today</a>.",
-      "Highlighted by <a href=\"https://www.thedp.com/article/2026/09/penn-artificial-intelligence-peer-review-ranking-study-wharton\">Daily Pennsylvanian</a>.",
-      "Highlighted by <a href=\"https://ai-analytics.wharton.upenn.edu/insights/why-authors-are-better-at-predicting-impact-than-peer-review/\">Wharton AI &amp; Analytics Insight</a>."
+      "Featured in <a href=\"https://www.nature.com/articles/s43588-026-01046-1\">Nature Computational Science News &amp; Views</a> and a <a href=\"https://www.nature.com/articles/d41586-026-00059-0\">Nature Index research highlight</a>.",
+      "Covered by <a href=\"https://penntoday.upenn.edu/news/wharton-ai-initiative-why-authors-are-better-predicting-impact-peer-review\">Penn Today</a>, <a href=\"https://www.thedp.com/article/2026/09/penn-artificial-intelligence-peer-review-ranking-study-wharton\">The Daily Pennsylvanian</a>, and <a href=\"https://ai-analytics.wharton.upenn.edu/insights/why-authors-are-better-at-predicting-impact-than-peer-review/\">Wharton AI &amp; Analytics Insight</a>."
     ],
     "links": [
       {
@@ -127,12 +123,12 @@ window.PUBLICATIONS = [
   },
   {
     "title": "Inferring multi-organ genetic connections using imaging and clinical data through Mendelian randomization",
-    "authors": "Juan Shu et al.",
+    "authors": "Juan Shu, …, Bingxin Zhao",
     "venue": "Nature Biomedical Engineering",
     "year": 2026,
     "topic": "Inter-organ Connections",
     "highlights": [
-      "Recognized by the 2023 ASHG Reviewers’ Choice Award (top 10%)."
+      "2023 ASHG Reviewers’ Choice Award (top 10%)."
     ],
     "links": [
       {
@@ -143,12 +139,12 @@ window.PUBLICATIONS = [
   },
   {
     "title": "The landscape of plasma proteomic links to human organ imaging",
-    "authors": "Zirui Fan et al.",
+    "authors": "Zirui Fan, …, Bingxin Zhao",
     "venue": "Nature Communications",
     "year": 2026,
     "topic": "Inter-organ Connections",
     "highlights": [
-      "Featured by <a href=\"https://www.nature.com/collections/ecgchegdhe\">Editors’ Highlights in Translational and Clinical Research</a> (the 50 best papers recently published in this area)."
+      "Selected for Nature Communications <a href=\"https://www.nature.com/collections/ecgchegdhe\">Editors’ Highlights</a> in translational and clinical research (the 50 best recent papers in the area)."
     ],
     "links": [
       {
@@ -159,12 +155,12 @@ window.PUBLICATIONS = [
   },
   {
     "title": "Mapping rare protein-coding variants on multi-organ imaging traits",
-    "authors": "Yijun Fan et al.",
+    "authors": "Yijun Fan, …, Bingxin Zhao",
     "venue": "Nature Communications",
     "year": 2026,
     "topic": "Inter-organ Connections",
     "highlights": [
-      "Recognized by the 2024 ASHG Reviewers’ Choice Award (top 10%)."
+      "2024 ASHG Reviewers’ Choice Award (top 10%)."
     ],
     "links": [
       {
@@ -206,7 +202,7 @@ window.PUBLICATIONS = [
     "authors": "Fei Xue and Bingxin Zhao",
     "venue": "Annals of Statistics",
     "year": 2025,
-    "topic": "Statistical Methods and Theory with Biomedical Applications",
+    "topic": "Statistical Methods and Theory",
     "highlights": [
       "Recognized by the 2025 <a href=\"https://imstat.org/2025/03/22/bingxin-zhao-receives-2025-ims-tweedie-new-researcher-award/\">IMS (Institute of Mathematical Statistics) Tweedie New Researcher Award</a>."
     ],
@@ -222,7 +218,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao, Shurong Zheng, and Hongtu Zhu",
     "venue": "Annals of Statistics",
     "year": 2024,
-    "topic": "Statistical Methods and Theory with Biomedical Applications",
+    "topic": "Statistical Methods and Theory",
     "highlights": [],
     "links": [
       {
@@ -233,7 +229,7 @@ window.PUBLICATIONS = [
   },
   {
     "title": "Analyzing cross-trait genetic architecture with the BIGA cloud computing platform",
-    "authors": "Yujue Li et al.",
+    "authors": "Yujue Li, …, Bingxin Zhao",
     "venue": "Journal of the American Statistical Association",
     "year": 2026,
     "topic": "AI for Science and Research Platforms",
@@ -254,7 +250,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao, Xiaochen Yang, and Hongtu Zhu",
     "venue": "Journal of the American Statistical Association",
     "year": 2024,
-    "topic": "Statistical Methods and Theory with Biomedical Applications",
+    "topic": "Statistical Methods and Theory",
     "highlights": [],
     "links": [
       {
@@ -268,9 +264,9 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao and Hongtu Zhu",
     "venue": "Journal of the American Statistical Association",
     "year": 2022,
-    "topic": "Statistical Methods and Theory with Biomedical Applications",
+    "topic": "Statistical Methods and Theory",
     "highlights": [
-      "Recognized by the 2020 ENAR Distinguished Student Paper Award."
+      "2020 ENAR Distinguished Student Paper Award."
     ],
     "links": [
       {
@@ -284,7 +280,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao and Fei Zou",
     "venue": "Biometrics",
     "year": 2022,
-    "topic": "Statistical Methods and Theory with Biomedical Applications",
+    "topic": "Statistical Methods and Theory",
     "highlights": [],
     "links": [
       {
@@ -298,7 +294,7 @@ window.PUBLICATIONS = [
     "authors": "Bingxin Zhao, Fei Zou, and Hongtu Zhu",
     "venue": "Biometrics",
     "year": 2023,
-    "topic": "Statistical Methods and Theory with Biomedical Applications",
+    "topic": "Statistical Methods and Theory",
     "highlights": [],
     "links": [
       {
@@ -323,12 +319,12 @@ window.PUBLICATIONS = [
   },
   {
     "title": "PennPRS: a centralized cloud computing platform for efficient polygenic risk score training in precision medicine",
-    "authors": "Jin Jin et al.",
+    "authors": "Jin Jin, …, Bingxin Zhao",
     "venue": "Nature Methods (accepted)",
     "year": 2026,
     "topic": "AI for Science and Research Platforms",
     "highlights": [
-      "Recognized by the 2025 ASHG Reviewers’ Choice Award (top 10%)."
+      "2025 ASHG Reviewers’ Choice Award (top 10%)."
     ],
     "links": [
       {
@@ -347,6 +343,6 @@ window.PUBLICATIONS = [
 window.TOPIC_ORDER = [
   "Inter-organ Connections",
   "Genetics of the Human Brain",
-  "Statistical Methods and Theory with Biomedical Applications",
+  "Statistical Methods and Theory",
   "AI for Science and Research Platforms"
 ];
