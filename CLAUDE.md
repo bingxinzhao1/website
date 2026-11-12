@@ -27,8 +27,8 @@ GitHub Pages / DNS steps.
 - Paper highlights: short, at most two lines per paper, grouped by kind (journal features in
   one line, press coverage in another, awards as "YEAR Award Name"). Keep every link.
 - A News item about a paper ends with a one-sentence summary of the paper.
-- Colors: Penn Blue #011F5B and Penn Red #990000, with Marine Gray and Morning Yellow
-  accents (Wharton visual standards). Paper cards are boxed; the title links to the paper.
+- Colors: Penn Blue #011F5B with Marine Gray and Morning Yellow accents (Wharton visual
+  standards). No red: it clashed with the blue. Paper cards are boxed; the title links to the paper.
 - Writing style: American English, serial commas, no em dashes.
 - `cv.pdf` is intentionally not in the repo until a public version (no phone number or
   grant amounts) is supplied. The CV links point to it.

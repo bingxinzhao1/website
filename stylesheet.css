@@ -35,7 +35,8 @@ a {
 
 a:focus,
 a:hover {
-  color: var(--penn-red);
+  color: var(--penn-blue);
+  text-decoration: underline;
 }
 
 h1,
@@ -77,6 +78,10 @@ p {
   padding: 10px 16px;
 }
 
+.top-nav-brand:hover {
+  text-decoration: none;
+}
+
 .top-nav-brand {
   font-weight: 700;
   color: var(--penn-blue);
@@ -100,7 +105,8 @@ p {
 .top-nav-links a:hover,
 .top-nav-links a:focus {
   background-color: var(--marine-gray);
-  color: var(--penn-red);
+  color: var(--penn-blue);
+  text-decoration: none;
 }
 
 /* Page column */
@@ -434,7 +440,7 @@ span.papertitle {
 }
 
 .news-date {
-  color: var(--penn-red);
+  color: var(--penn-blue);
   font-weight: 700;
   white-space: nowrap;
 }
