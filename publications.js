@@ -3,6 +3,7 @@
      title          paper title
      authors        short author list: "Bingxin Zhao et al." when first author, "First Author, …, Bingxin Zhao"
                     when last author (the name "Bingxin Zhao" is shown in bold)
+     note           optional short label after the authors, e.g. "*co-corresponding authors" (mark the names with * in authors)
      venue, year    shown as "Venue, year"
      topic          one topic from window.TOPIC_ORDER at the end of this file, or a list such as
                     ["Inter-organ Connections", "Genetics of the Human Brain"] for a paper in two;
@@ -20,7 +21,7 @@ window.PUBLICATIONS = [
     "year": 2023,
     "topic": "Inter-organ Connections",
     "highlights": [
-      "Featured in a <a href=\"https://www.science.org/doi/10.1126/science.adi2392\">Science Perspective</a> and a <a href=\"https://doi.org/10.1038/s41569-023-00905-y\">Nature Reviews Cardiology research highlight</a>.",
+      "Featured in a <a href=\"https://www.science.org/doi/10.1126/science.adi2392\">Science Perspective</a> and a <a href=\"https://doi.org/10.1038/s41569-023-00905-y\">Nature Reviews Cardiology research highlight</a>, and covered by <a href=\"https://www.unc.edu/posts/2023/06/15/new-study-reveals-strong-connection-between-heart-and-brain-health/\">UNC News</a> and <a href=\"https://alzforum.org/node/2775541\">Alzforum</a>.",
       "Recognized by the <a href=\"https://www.ukbiobank.ac.uk/news/uk-biobank-unveils-winner-of-the-scientific-impact-awards-2025-at-annual-conference/\">inaugural UK Biobank Scientific Impact Awards</a> and named one of the <a href=\"https://www.ukbiobank.ac.uk/research-stories/10-research-findings-from-our-imaging-projects-first-decade/\">top 10 findings</a> from the first decade of UK Biobank imaging (<a href=\"https://www.ukbiobank.ac.uk/research-stories/how-keeping-the-heart-healthy-could-benefit-the-brain/\">interview</a>)."
     ],
     "links": [
@@ -51,7 +52,7 @@ window.PUBLICATIONS = [
     "year": 2021,
     "topic": "Genetics of the Human Brain",
     "highlights": [
-      "Featured in a <a href=\"https://www.science.org/doi/abs/10.1126/science.abj1881\">Science Perspective</a>."
+      "Featured in a <a href=\"https://www.science.org/doi/abs/10.1126/science.abj1881\">Science Perspective</a>, and covered by <a href=\"https://sph.unc.edu/?p=379968\">UNC Gillings School of Global Public Health</a> and <a href=\"https://medicalxpress.com/news/2021-06-combining-mri-imaging-brain-genetic.amp\">Medical Xpress</a>."
     ],
     "links": [
       {
@@ -66,7 +67,9 @@ window.PUBLICATIONS = [
     "venue": "Nature Genetics",
     "year": 2022,
     "topic": "Genetics of the Human Brain",
-    "highlights": [],
+    "highlights": [
+      "Covered by <a href=\"https://sph.unc.edu/?p=392365\">UNC Gillings School of Global Public Health</a>."
+    ],
     "links": [
       {
         "label": "Paper",
@@ -92,13 +95,14 @@ window.PUBLICATIONS = [
   },
   {
     "title": "Self-rankings as a predictor of scientific impact beyond peer review",
-    "authors": "Buxin Su, …, Bingxin Zhao, Weijie Su",
+    "authors": "Buxin Su, …, Bingxin Zhao*, Weijie Su*",
+    "note": "*co-corresponding authors",
     "venue": "Nature Computational Science",
     "year": 2026,
     "topic": "AI for Science and Research Platforms",
     "highlights": [
-      "Featured in <a href=\"https://www.nature.com/articles/s43588-026-01046-1\">Nature Computational Science News &amp; Views</a> and a <a href=\"https://www.nature.com/articles/d41586-026-00059-0\">Nature Index research highlight</a>.",
-      "Covered by <a href=\"https://penntoday.upenn.edu/news/wharton-ai-initiative-why-authors-are-better-predicting-impact-peer-review\">Penn Today</a>, <a href=\"https://www.thedp.com/article/2026/09/penn-artificial-intelligence-peer-review-ranking-study-wharton\">The Daily Pennsylvanian</a>, and <a href=\"https://ai-analytics.wharton.upenn.edu/insights/why-authors-are-better-at-predicting-impact-than-peer-review/\">Wharton AI &amp; Analytics Insight</a>."
+      "Cited as a basis for the <a href=\"https://blog.icml.cc/2026/01/12/introducing-icml-2026-policy-for-self-ranking-in-reviews/\">ICML 2026 self-ranking policy</a>.",
+      "Featured in <a href=\"https://www.nature.com/articles/s43588-026-01046-1\">Nature Computational Science News &amp; Views</a> and a <a href=\"https://www.nature.com/articles/d41586-026-00059-0\">Nature Index research highlight</a>, and covered by <a href=\"https://penntoday.upenn.edu/news/wharton-ai-initiative-why-authors-are-better-predicting-impact-peer-review\">Penn Today</a>, <a href=\"https://www.thedp.com/article/2026/09/penn-artificial-intelligence-peer-review-ranking-study-wharton\">The Daily Pennsylvanian</a>, and <a href=\"https://ai-analytics.wharton.upenn.edu/insights/why-authors-are-better-at-predicting-impact-than-peer-review/\">Wharton AI &amp; Analytics Insight</a>."
     ],
     "links": [
       {

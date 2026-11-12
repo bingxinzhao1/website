@@ -55,6 +55,7 @@
       if (i > 0) authors.appendChild(el('b', null, ME));
       if (part) authors.appendChild(document.createTextNode(part));
     });
+    if (p.note) authors.appendChild(el('span', 'pub-note', ' (' + p.note + ')'));
     right.appendChild(authors);
 
     var venue = el('div', 'pub-venue');

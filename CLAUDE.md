@@ -17,7 +17,9 @@ GitHub Pages / DNS steps.
 ## Conventions
 - Short author lists: "Bingxin Zhao et al." when first author; "First Author, …, Bingxin Zhao"
   when last (corresponding) author. "Bingxin Zhao" is bolded by script.js.
-- Do not add "Co-senior author" labels.
+- Do not add "Co-senior author" labels. The self-rankings paper carries a
+  "*co-corresponding authors" note (optional `note` field; Bingxin Zhao and Weijie
+  Su are starred in the author list), as requested.
 - No preprints (arXiv, bioRxiv, medRxiv) in the research directions or paper cards; only
   published or accepted papers. Preprint platforms (PASS, TigerAI) stay under Platforms.
 - Topic tags match the four research directions. Their order on the paper list is set by

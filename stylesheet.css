@@ -283,6 +283,11 @@ span.papertitle {
   color: #333;
 }
 
+.pub-note {
+  color: #666;
+  font-size: 13px;
+}
+
 .pub-venue {
   margin-top: 2px;
 }
