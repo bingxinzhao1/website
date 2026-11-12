@@ -8,9 +8,8 @@ GitHub Pages / DNS steps.
 - `index.html`: bio, News (dated list, newest first), four research directions, Platforms,
   Group. Page text lives here.
 - `publications.js`: `window.PUBLICATIONS`, one object per paper (title, authors, venue,
-  year, topic, selected, highlights[], image, links[]). Selected papers appear in the
-  order of the "Selected" list on the old site's research page.
-- `script.js`: renders paper cards and the Selected / by Year / by Topic filters.
+  year, topic, highlights[], image, links[]). Within each topic, papers appear in file order.
+- `script.js`: renders paper cards and the by Topic (default) / by Year views.
 - `stylesheet.css`: layout adapted from Jon Barron's template; Lato font.
 - `images/teasers/*.svg`: generated schematic image per paper (5:3).
 

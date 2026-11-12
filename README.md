@@ -8,7 +8,7 @@ A static, single-page site. No build step: open `index.html` in a browser to pre
 | --- | --- |
 | `index.html` | All page text: bio, news, research directions, platforms, group |
 | `publications.js` | The paper list (21 published or accepted papers; preprints are left out). Field notes are at the top of the file |
-| `script.js` | Draws the paper cards and runs the Selected / by Year / by Topic buttons |
+| `script.js` | Draws the paper cards and runs the by Topic / by Year buttons |
 | `stylesheet.css` | All styling |
 | `images/profile.jpg` | Profile photo (640 x 640, shown as a circle) |
 | `images/teasers/*.svg` | One schematic image per paper (300 x 180) |
@@ -16,7 +16,7 @@ A static, single-page site. No build step: open `index.html` in a browser to pre
 
 ## Common edits
 
-- **Add a paper:** copy an entry in `publications.js`, edit it, and set `selected: true` if it should show by default.
+- **Add a paper:** copy an entry in `publications.js` and edit it. Its `topic` decides which direction it is listed under; within a direction, papers appear in file order.
 - **Use a real figure for a paper:** put the image in `images/teasers/` and point that paper's `image` field at it. PNG, JPG and SVG all work; 5:3 is the shape the cards expect.
 - **Add a news item:** copy the top `<li>` in the News list in `index.html`, then change the date and text.
 - **Add or move a person:** edit the lists under `<!-- Group -->` in `index.html`.

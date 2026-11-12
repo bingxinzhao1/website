@@ -1,5 +1,5 @@
 /* Renders the publication list from publications.js and wires the
-   "Show: Selected / by Year / by Topic" controls. */
+   "Show: by Topic / by Year" controls. */
 (function () {
   'use strict';
 
@@ -9,7 +9,7 @@
   var tagBar = document.getElementById('pub-tag-bar');
   if (!listEl || !modeBar || !tagBar) return;
 
-  var state = { mode: 'selected', topic: 'all' };
+  var state = { mode: 'topic', topic: 'all' };
   var ME = 'Bingxin Zhao';
 
   function el(tag, className, text) {
@@ -94,11 +94,7 @@
 
   function renderList() {
     listEl.textContent = '';
-    if (state.mode === 'selected') {
-      pubs.filter(function (p) { return p.selected; }).forEach(function (p) {
-        listEl.appendChild(card(p));
-      });
-    } else if (state.mode === 'year') {
+    if (state.mode === 'year') {
       var sorted = pubs
         .map(function (p, i) { return { p: p, i: i }; })
         .sort(function (a, b) { return b.p.year - a.p.year || a.i - b.i; });
