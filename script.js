@@ -74,7 +74,6 @@
 
     var tagWrap = el('div', 'pub-tags');
     topicsOf(p).forEach(function (t) { tagWrap.appendChild(el('span', 'pub-tag', t)); });
-    tagWrap.appendChild(el('span', 'pub-tag', String(p.year)));
     right.appendChild(tagWrap);
 
     if (p.highlights && p.highlights.length) {
