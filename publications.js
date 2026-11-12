@@ -67,9 +67,7 @@ window.PUBLICATIONS = [
     "venue": "Nature Genetics",
     "year": 2022,
     "topic": "Genetics of the Human Brain",
-    "highlights": [
-      "Covered by <a href=\"https://sph.unc.edu/?p=392365\">UNC Gillings School of Global Public Health</a>."
-    ],
+    "highlights": [],
     "links": [
       {
         "label": "Paper",
