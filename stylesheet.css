@@ -418,3 +418,7 @@ p {
     gap: 0;
   }
 }
+
+.card-paper {
+  margin-top: 4px;
+}
