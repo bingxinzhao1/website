@@ -363,7 +363,7 @@ window.PUBLICATIONS = [
     "venue": "Nature Methods (accepted)",
     "year": 2026,
     "topic": "AI, Agentic Platforms, and Cloud Computing",
-    "selected": false,
+    "selected": true,
     "highlights": [
       "Recognized by the 2025 ASHG Reviewers’ Choice Award (top 10%)."
     ],
