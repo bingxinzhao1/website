@@ -60,6 +60,7 @@
 
     var venue = el('div', 'pub-venue');
     venue.appendChild(el('i', null, p.venue));
+    venue.appendChild(document.createTextNode(', ' + p.year));
     links.forEach(function (l) {
       if (l === main) return;
       venue.appendChild(document.createTextNode(' / '));
