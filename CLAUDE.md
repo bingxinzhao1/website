@@ -9,7 +9,8 @@ GitHub Pages / DNS steps.
   Group. Page text lives here.
 - `publications.js`: `window.PUBLICATIONS`, one object per paper (title, authors, venue,
   year, topic, highlights[], links[], optional image). Within each topic, papers appear in file order.
-- `script.js`: renders paper cards and the by Topic (default) / by Year views.
+- `script.js`: renders paper cards and the by Topic (default) / by Year views. Both views
+  share the same boxed cards and a second row of filter buttons (topics or years).
 - `stylesheet.css`: layout adapted from Jon Barron's template; Lato font.
 - Paper cards are text only. Do not add generated or decorative images; a real figure
   from the paper may be added via the optional `image` field.

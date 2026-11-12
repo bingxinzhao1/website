@@ -9,7 +9,7 @@
   var tagBar = document.getElementById('pub-tag-bar');
   if (!listEl || !modeBar || !tagBar) return;
 
-  var state = { mode: 'topic', topic: 'all' };
+  var state = { mode: 'topic', topic: 'all', year: 'all' };
   var ME = 'Bingxin Zhao';
 
   function el(tag, className, text) {
@@ -114,7 +114,8 @@
         .sort(function (a, b) { return b.p.year - a.p.year || a.i - b.i; });
       var current = null;
       sorted.forEach(function (x) {
-        if (x.p.year !== current) {
+        if (state.year !== 'all' && String(x.p.year) !== state.year) return;
+        if (state.year === 'all' && x.p.year !== current) {
           current = x.p.year;
           listEl.appendChild(el('h3', 'pub-year-heading', String(current)));
         }
@@ -130,28 +131,40 @@
     }
   }
 
-  function renderControls() {
-    Array.prototype.forEach.call(modeBar.querySelectorAll('button[data-pub-mode]'), function (b) {
-      b.setAttribute('aria-pressed', b.getAttribute('data-pub-mode') === state.mode ? 'true' : 'false');
+  function years() {
+    var seen = [];
+    pubs.forEach(function (p) {
+      if (seen.indexOf(String(p.year)) < 0) seen.push(String(p.year));
     });
-    tagBar.hidden = state.mode !== 'topic';
-    Array.prototype.forEach.call(tagBar.querySelectorAll('button'), function (b) {
-      b.setAttribute('aria-pressed', b.getAttribute('data-topic') === state.topic ? 'true' : 'false');
-    });
+    return seen.sort(function (a, b) { return b - a; });
   }
 
-  function buildTagBar() {
-    [['all', 'All Topics']].concat(topics().map(function (t) { return [t, t]; })).forEach(function (t) {
-      var b = el('button', null, t[1]);
+  // The second row of buttons: topics in the topic view, years in the year view.
+  function buildFilterBar() {
+    tagBar.textContent = '';
+    var key = state.mode === 'year' ? 'year' : 'topic';
+    var options = key === 'year'
+      ? [['all', 'All Years']].concat(years().map(function (y) { return [y, y]; }))
+      : [['all', 'All Topics']].concat(topics().map(function (t) { return [t, t]; }));
+    options.forEach(function (o) {
+      var b = el('button', null, o[1]);
       b.type = 'button';
-      b.setAttribute('data-topic', t[0]);
+      b.setAttribute('aria-pressed', state[key] === o[0] ? 'true' : 'false');
       b.addEventListener('click', function () {
-        state.topic = t[0];
+        state[key] = o[0];
         renderControls();
         renderList();
       });
       tagBar.appendChild(b);
     });
+  }
+
+  function renderControls() {
+    Array.prototype.forEach.call(modeBar.querySelectorAll('button[data-pub-mode]'), function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-pub-mode') === state.mode ? 'true' : 'false');
+    });
+    tagBar.hidden = false;
+    buildFilterBar();
   }
 
   Array.prototype.forEach.call(modeBar.querySelectorAll('button[data-pub-mode]'), function (b) {
@@ -162,7 +175,6 @@
     });
   });
 
-  buildTagBar();
   renderControls();
   renderList();
 })();
