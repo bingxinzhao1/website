@@ -2,7 +2,8 @@
    To add a paper, copy one entry and edit it. Fields:
      title          paper title
      authors        short author list: "Bingxin Zhao et al." when first author, "First Author, …, Bingxin Zhao"
-                    when last author (the name "Bingxin Zhao" is shown in bold)
+                    when last author, "First Author, …, Bingxin Zhao, …, Last Author" when a contributing
+                    author (the name "Bingxin Zhao" is shown in bold)
      note           optional short label after the authors, e.g. "*co-corresponding authors" (mark the names with * in authors)
      venue, year    shown as "Venue, year"
      topic          one topic from window.TOPIC_ORDER at the end of this file, or a list such as
@@ -336,6 +337,190 @@ window.PUBLICATIONS = [
       {
         "label": "Website",
         "url": "https://pennprs.org/"
+      }
+    ]
+  },
+  {
+    "title": "A multi-cohort genome-wide association study in African ancestry individuals reveals risk loci for primary open-angle glaucoma",
+    "authors": "Shefali S. Verma, …, Bingxin Zhao, …, Joan M. O’Brien",
+    "venue": "Cell",
+    "year": 2024,
+    "topic": "Inter-organ Connections",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1016/j.cell.2023.12.006"
+      }
+    ]
+  },
+  {
+    "title": "The genetic architecture of biological age in nine human organ systems",
+    "authors": "Junhao Wen, …, Bingxin Zhao, …, Christos Davatzikos",
+    "venue": "Nature Aging",
+    "year": 2024,
+    "topic": "Inter-organ Connections",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1038/s43587-024-00662-8"
+      }
+    ]
+  },
+  {
+    "title": "UKB-MDRMF: a multi-disease risk and multimorbidity framework based on UK Biobank data",
+    "authors": "Yukang Jiang, Bingxin Zhao, …, Hongtu Zhu",
+    "venue": "Nature Communications",
+    "year": 2025,
+    "topic": "Inter-organ Connections",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1038/s41467-025-58724-3"
+      }
+    ]
+  },
+  {
+    "title": "Early vascular aging determined by three-dimensional aortic geometry: genetic determinants and clinical consequences",
+    "authors": "Cameron Beeche, Bingxin Zhao, …, Julio A. Chirinos",
+    "venue": "Circulation",
+    "year": 2025,
+    "topic": "Inter-organ Connections",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1161/CIRCULATIONAHA.125.074554"
+      }
+    ]
+  },
+  {
+    "title": "Geometric aging of the thoracic aorta: insights from 2 large cohorts",
+    "authors": "Cameron A. Beeche, …, Bingxin Zhao, …, Julio A. Chirinos",
+    "venue": "Hypertension",
+    "year": 2025,
+    "topic": "Inter-organ Connections",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1161/HYPERTENSIONAHA.125.25259"
+      }
+    ]
+  },
+  {
+    "title": "The genetic architecture of multimodal human brain age",
+    "authors": "Junhao Wen, Bingxin Zhao, …, Christos Davatzikos",
+    "venue": "Nature Communications",
+    "year": 2024,
+    "topic": "Genetics of the Human Brain",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1038/s41467-024-46796-6"
+      }
+    ]
+  },
+  {
+    "title": "A genetically informed brain atlas for enhancing brain imaging genomics",
+    "authors": "Jingxuan Bao, …, Bingxin Zhao, …, Li Shen",
+    "venue": "Nature Communications",
+    "year": 2025,
+    "topic": "Genetics of the Human Brain",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1038/s41467-025-57636-6"
+      }
+    ]
+  },
+  {
+    "title": "Cross-ancestry and sex-stratified genome-wide association analyses of brain white matter principal components",
+    "authors": "Junlin Shen, …, Bingxin Zhao, …, Chunshui Yu",
+    "venue": "Nature Communications (accepted in principle)",
+    "year": 2026,
+    "topic": "Genetics of the Human Brain",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Preprint",
+        "url": "https://doi.org/10.21203/rs.3.rs-6018863/v1"
+      }
+    ]
+  },
+  {
+    "title": "The X chromosome’s influences on the human brain",
+    "authors": "Zhiwen Jiang, …, Bingxin Zhao, …, Hongtu Zhu",
+    "venue": "Science Advances",
+    "year": 2025,
+    "topic": "Genetics of the Human Brain",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1126/sciadv.adq5360"
+      }
+    ]
+  },
+  {
+    "title": "A phenome-wide association and Mendelian randomization study for suicide attempt within UK Biobank",
+    "authors": "Meiyan Huang, …, Bingxin Zhao, …, Wenliang Pan",
+    "venue": "Molecular Psychiatry",
+    "year": 2026,
+    "topic": "Genetics of the Human Brain",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1038/s41380-025-03214-7"
+      }
+    ]
+  },
+  {
+    "title": "Large-scale evaluation of proteomic and polygenic risk scores reveals complementary contributions to incident disease prediction",
+    "authors": "Jakob Woerner, …, Bingxin Zhao, …, Dokyoon Kim",
+    "venue": "Nature Genetics (accepted in principle)",
+    "year": 2026,
+    "topic": "Statistical Methods and Theory",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Preprint",
+        "url": "https://doi.org/10.1101/2025.07.10.25331242"
+      }
+    ]
+  },
+  {
+    "title": "Benchmarking DNA foundation models for genomic and genetic tasks",
+    "authors": "Haonan Feng, …, Bingxin Zhao, …, Chong Wu",
+    "venue": "Nature Communications",
+    "year": 2025,
+    "topic": "AI for Science and Research Platforms",
+    "highlights": [],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1038/s41467-025-65823-8"
+      }
+    ]
+  },
+  {
+    "title": "Generalizable CT vision-language modeling for population health and disease risk",
+    "authors": "Cameron A. Beeche, …, Bingxin Zhao, …, Walter R. Witschey",
+    "venue": "npj Digital Medicine",
+    "year": 2026,
+    "topic": "AI for Science and Research Platforms",
+    "highlights": [
+      "Covered by <a href=\"https://lifespan.io/ai-extracts-broader-health-insights-from-routine-ct-scans/\">Lifespan.io</a>."
+    ],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1038/s41746-026-03257-2"
       }
     ]
   }

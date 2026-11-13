@@ -17,7 +17,11 @@ GitHub Pages / DNS steps.
 
 ## Conventions
 - Short author lists: "Bingxin Zhao et al." when first author; "First Author, …, Bingxin Zhao"
-  when last (corresponding) author. "Bingxin Zhao" is bolded by script.js.
+  when last (corresponding) author; "First Author, …, Bingxin Zhao, …, Last Author" when a
+  contributing author. "Bingxin Zhao" is bolded by script.js.
+- Contributing-author papers are listed after Bingxin's own first- and last-author papers
+  within each topic (journals of Nature Communications level and selected others).
+  "Accepted in principle" papers link to their preprint and say so in the venue.
 - Do not add "Co-senior author" labels. The self-rankings paper carries a
   "*co-corresponding authors" note (optional `note` field; Bingxin Zhao and Weijie
   Su are starred in the author list), as requested.
