@@ -143,7 +143,7 @@
     if (heading && items.length > PREVIEW) {
       var btn = el('button', 'pub-more', expanded[key]
         ? 'Show fewer'
-        : 'Show all ' + items.length + ' papers in ' + heading);
+        : 'Show all papers in ' + heading);
       btn.type = 'button';
       btn.addEventListener('click', function () {
         expanded[key] = !expanded[key];

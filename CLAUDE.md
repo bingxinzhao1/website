@@ -36,6 +36,8 @@ GitHub Pages / DNS steps.
   Methods and Theory; AI for Science and Research Platforms; Aging and Disease Risk. A paper
   may list two topics (`topic` as an array, main topic first); it then appears under both,
   after the papers whose main topic it is. Keep two-topic papers few (currently five).
+- In "All Topics" and "All Years", each group shows its first three papers and a "Show all
+  papers in …" button (PREVIEW in script.js); a single topic or year shows everything.
 - The by Year view shows one group per year for the last five years and groups older papers
   as "YYYY and earlier" (computed from the current year in script.js).
 - UKB-MDRMF carries a "*co-first authors" note (Yukang Jiang and Bingxin Zhao starred).
