@@ -18,7 +18,7 @@ A static, single-page site. No build step: open `index.html` in a browser to pre
 
 ## Common edits
 
-- **Add a paper:** copy an entry in `publications.js` and edit it. Its `topic` decides which direction it is listed under; within a direction, papers appear in file order.
+- **Add a paper:** copy an entry in `publications.js` and edit it. Its `topic` decides which section it is listed under; the order inside a section is automatic (own papers first, then by journal via `JOURNAL_ORDER`).
 - **Add a figure to a paper:** papers show no images by default. To give one a figure, put the image in `images/papers/` and add an `image` field pointing at it. PNG, JPG and SVG all work; 5:3 is the shape the cards expect.
 - **Add a news item:** copy the top `<li>` in the News list in `index.html`, then change the date and text.
 - **Add or move a person:** edit the lists under `<!-- Group -->` in `index.html`.

@@ -8,7 +8,7 @@ GitHub Pages / DNS steps.
 - `index.html`: bio, News (dated list, newest first), four research directions, Platforms,
   Group. Page text lives here.
 - `publications.js`: `window.PUBLICATIONS`, one object per paper (title, authors, venue,
-  year, topic, highlights[], links[], optional image). Within each topic, papers appear in file order.
+  year, topic, highlights[], links[], optional image), plus TOPIC_ORDER and JOURNAL_ORDER.
 - `script.js`: renders paper cards and the by Topic (default) / by Year views. Both views
   share the same boxed cards and a second row of filter buttons (topics or years).
 - `stylesheet.css`: layout adapted from Jon Barron's template; Lato font.
@@ -19,8 +19,11 @@ GitHub Pages / DNS steps.
 - Short author lists: "Bingxin Zhao et al." when first author; "First Author, …, Bingxin Zhao"
   when last (corresponding) author; "First Author, …, Bingxin Zhao, …, Last Author" when a
   contributing author. "Bingxin Zhao" is bolded by script.js.
-- Contributing-author papers are listed after Bingxin's own first- and last-author papers
-  within each topic (journals of Nature Communications level and selected others).
+- Ordering (both views, set in script.js): own papers first (first, last, co-first, or
+  co-corresponding author), then contributing-author papers; within each group by
+  `window.JOURNAL_ORDER` in publications.js, then newest first. In the topic view, papers
+  whose main topic is the section come before second-topic papers within each group.
+  Add any new journal to JOURNAL_ORDER where it belongs.
   "Accepted in principle" papers link to their preprint and say so in the venue.
 - Do not add "Co-senior author" labels. The self-rankings paper carries a
   "*co-corresponding authors" note (optional `note` field; Bingxin Zhao and Weijie

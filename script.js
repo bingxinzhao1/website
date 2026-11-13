@@ -112,12 +112,32 @@
     return y >= CUTOFF ? String(y) : String(CUTOFF - 1) + ' and earlier';
   }
 
+  // Ordering within a topic or year: own papers first (first, last, co-first, or
+  // co-corresponding author), then contributing-author papers; within each group, by
+  // the journal order in publications.js, then newest first, then file order.
+  var JOURNALS = window.JOURNAL_ORDER || [];
+  function isOwn(p) {
+    var a = String(p.authors || '');
+    return a.indexOf(ME) === 0 || /Bingxin Zhao$/.test(a) || a.indexOf(ME + '*') >= 0;
+  }
+  function journalRank(p) {
+    var r = JOURNALS.indexOf(String(p.venue).replace(/ \(.*\)$/, ''));
+    return r < 0 ? JOURNALS.length : r;
+  }
+  function compare(a, b, extra) {
+    return (isOwn(b.p) - isOwn(a.p)) || (extra ? extra(a, b) : 0) ||
+      (journalRank(a.p) - journalRank(b.p)) || (b.p.year - a.p.year) || (a.i - b.i);
+  }
+
   function renderList() {
     listEl.textContent = '';
     if (state.mode === 'year') {
       var sorted = pubs
         .map(function (p, i) { return { p: p, i: i }; })
-        .sort(function (a, b) { return b.p.year - a.p.year || a.i - b.i; });
+        .sort(function (a, b) {
+          var ya = yearGroup(a.p.year), yb = yearGroup(b.p.year);
+          return ya === yb ? compare(a, b) : (b.p.year - a.p.year);
+        });
       var current = null;
       sorted.forEach(function (x) {
         var g = yearGroup(x.p.year);
@@ -132,11 +152,12 @@
       topics().forEach(function (t) {
         if (state.topic !== 'all' && state.topic !== t) return;
         if (state.topic === 'all') listEl.appendChild(el('h3', 'pub-year-heading', t));
-        // Papers whose main (first) topic is t come first, then those listing t second.
-        var inT = pubs.filter(function (p) { return topicsOf(p).indexOf(t) >= 0; });
-        inT.filter(function (p) { return topicsOf(p)[0] === t; })
-          .concat(inT.filter(function (p) { return topicsOf(p)[0] !== t; }))
-          .forEach(function (p) { listEl.appendChild(card(p)); });
+        // Within own and contributing groups, papers whose main topic is t come first.
+        var main = function (x) { return topicsOf(x.p)[0] === t ? 1 : 0; };
+        pubs.map(function (p, i) { return { p: p, i: i }; })
+          .filter(function (x) { return topicsOf(x.p).indexOf(t) >= 0; })
+          .sort(function (a, b) { return compare(a, b, function (a, b) { return main(b) - main(a); }); })
+          .forEach(function (x) { listEl.appendChild(card(x.p)); });
       });
     }
   }

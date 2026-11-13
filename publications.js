@@ -8,7 +8,7 @@
      venue, year    shown as "Venue, year"
      topic          one topic from window.TOPIC_ORDER at the end of this file, or a list such as
                     ["Inter-organ Connections", "Genetics of the Human Brain"] for a paper in two;
-                    within a topic, papers appear in the order they are listed here
+                    order within a topic follows JOURNAL_ORDER at the end of this file
      highlights     bullet lines for awards and coverage; [] for none.
                     Each line is text and may contain links: <a href="https://...">label</a>
      image          optional figure path, e.g. "images/papers/x.png" (5:3 works well); leave out for none
@@ -549,4 +549,27 @@ window.TOPIC_ORDER = [
   "Statistical Methods and Theory",
   "AI for Science and Research Platforms",
   "Aging and Disease Risk"
+];
+
+/* Journal order used to sort papers within a topic or year: own papers (first, last,
+   co-first, or co-corresponding author) come first, then contributing-author papers;
+   each group follows this list, then newest first. Add new journals where they belong. */
+window.JOURNAL_ORDER = [
+  "Science",
+  "Cell",
+  "Nature Genetics",
+  "Nature Reviews Neurology",
+  "Nature Methods",
+  "Nature Biomedical Engineering",
+  "Nature Computational Science",
+  "Nature Aging",
+  "Annals of Statistics",
+  "Journal of the American Statistical Association",
+  "Circulation",
+  "Nature Communications",
+  "Science Advances",
+  "Molecular Psychiatry",
+  "npj Digital Medicine",
+  "Hypertension",
+  "Biometrics"
 ];
