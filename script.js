@@ -132,7 +132,10 @@
       topics().forEach(function (t) {
         if (state.topic !== 'all' && state.topic !== t) return;
         if (state.topic === 'all') listEl.appendChild(el('h3', 'pub-year-heading', t));
-        pubs.filter(function (p) { return topicsOf(p).indexOf(t) >= 0; })
+        // Papers whose main (first) topic is t come first, then those listing t second.
+        var inT = pubs.filter(function (p) { return topicsOf(p).indexOf(t) >= 0; });
+        inT.filter(function (p) { return topicsOf(p)[0] === t; })
+          .concat(inT.filter(function (p) { return topicsOf(p)[0] !== t; }))
           .forEach(function (p) { listEl.appendChild(card(p)); });
       });
     }

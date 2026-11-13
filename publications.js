@@ -115,7 +115,10 @@ window.PUBLICATIONS = [
     "authors": "Zirui Fan and Bingxin Zhao",
     "venue": "Nature Reviews Neurology",
     "year": 2026,
-    "topic": "Inter-organ Connections",
+    "topic": [
+      "Inter-organ Connections",
+      "AI for Science and Research Platforms"
+    ],
     "highlights": [],
     "links": [
       {
@@ -129,7 +132,10 @@ window.PUBLICATIONS = [
     "authors": "Juan Shu, …, Bingxin Zhao",
     "venue": "Nature Biomedical Engineering",
     "year": 2026,
-    "topic": "Inter-organ Connections",
+    "topic": [
+      "Inter-organ Connections",
+      "Aging and Disease Risk"
+    ],
     "highlights": [
       "2023 ASHG Reviewers’ Choice Award (top 10%)."
     ],
@@ -325,7 +331,10 @@ window.PUBLICATIONS = [
     "authors": "Jin Jin, …, Bingxin Zhao",
     "venue": "Nature Methods (accepted)",
     "year": 2026,
-    "topic": "AI for Science and Research Platforms",
+    "topic": [
+      "AI for Science and Research Platforms",
+      "Statistical Methods and Theory"
+    ],
     "highlights": [
       "2025 ASHG Reviewers’ Choice Award (top 10%)."
     ],
@@ -416,7 +425,10 @@ window.PUBLICATIONS = [
     "authors": "Junhao Wen, Bingxin Zhao, …, Christos Davatzikos",
     "venue": "Nature Communications",
     "year": 2024,
-    "topic": "Genetics of the Human Brain",
+    "topic": [
+      "Genetics of the Human Brain",
+      "Aging and Disease Risk"
+    ],
     "highlights": [],
     "links": [
       {
@@ -514,7 +526,10 @@ window.PUBLICATIONS = [
     "authors": "Cameron A. Beeche, …, Bingxin Zhao, …, Walter R. Witschey",
     "venue": "npj Digital Medicine",
     "year": 2026,
-    "topic": "AI for Science and Research Platforms",
+    "topic": [
+      "AI for Science and Research Platforms",
+      "Aging and Disease Risk"
+    ],
     "highlights": [
       "Covered by <a href=\"https://lifespan.io/ai-extracts-broader-health-insights-from-routine-ct-scans/\">Lifespan.io</a>."
     ],

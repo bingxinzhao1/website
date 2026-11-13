@@ -31,7 +31,8 @@ GitHub Pages / DNS steps.
   work on organ aging, multimorbidity, and disease risk). Order is set by `window.TOPIC_ORDER`
   in publications.js: Inter-organ Connections; Genetics of the Human Brain; Statistical
   Methods and Theory; AI for Science and Research Platforms; Aging and Disease Risk. A paper
-  may list two topics (`topic` as an array); it then appears under both.
+  may list two topics (`topic` as an array, main topic first); it then appears under both,
+  after the papers whose main topic it is. Keep two-topic papers few (currently five).
 - The by Year view shows one group per year for the last five years and groups older papers
   as "YYYY and earlier" (computed from the current year in script.js).
 - UKB-MDRMF carries a "*co-first authors" note (Yukang Jiang and Bingxin Zhao starred).
