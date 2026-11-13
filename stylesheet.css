@@ -329,6 +329,25 @@ span.papertitle {
   font-weight: 700;
 }
 
+.pub-more {
+  display: block;
+  margin: 2px 0 6px;
+  padding: 7px 14px;
+  border: 1px solid #e4e2dc;
+  border-radius: 8px;
+  background: var(--marine-gray);
+  color: var(--penn-blue);
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pub-more:hover,
+.pub-more:focus {
+  border-color: var(--penn-blue);
+}
+
 .pub-year-heading:first-child {
   margin-top: 0;
 }

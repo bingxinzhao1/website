@@ -129,6 +129,30 @@
       (journalRank(a.p) - journalRank(b.p)) || (b.p.year - a.p.year) || (a.i - b.i);
   }
 
+  // In "All Topics" / "All Years", each group shows its first few papers and a button
+  // to show the rest. Picking a single topic or year always shows every paper.
+  var PREVIEW = 3;
+  var expanded = {};
+
+  function appendGroup(key, heading, items) {
+    var showAll = !heading || expanded[key];
+    if (heading) listEl.appendChild(el('h3', 'pub-year-heading', heading));
+    items.forEach(function (p, i) {
+      if (showAll || i < PREVIEW) listEl.appendChild(card(p));
+    });
+    if (heading && items.length > PREVIEW) {
+      var btn = el('button', 'pub-more', expanded[key]
+        ? 'Show fewer'
+        : 'Show all ' + items.length + ' papers in ' + heading);
+      btn.type = 'button';
+      btn.addEventListener('click', function () {
+        expanded[key] = !expanded[key];
+        renderList();
+      });
+      listEl.appendChild(btn);
+    }
+  }
+
   function renderList() {
     listEl.textContent = '';
     if (state.mode === 'year') {
@@ -138,29 +162,30 @@
           var ya = yearGroup(a.p.year), yb = yearGroup(b.p.year);
           return ya === yb ? compare(a, b) : (b.p.year - a.p.year);
         });
-      var current = null;
+      var groups = [], byGroup = {};
       sorted.forEach(function (x) {
         var g = yearGroup(x.p.year);
+        if (!byGroup[g]) { byGroup[g] = []; groups.push(g); }
+        byGroup[g].push(x.p);
+      });
+      groups.forEach(function (g) {
         if (state.year !== 'all' && g !== state.year) return;
-        if (state.year === 'all' && g !== current) {
-          current = g;
-          listEl.appendChild(el('h3', 'pub-year-heading', g));
-        }
-        listEl.appendChild(card(x.p));
+        appendGroup('year:' + g, state.year === 'all' ? g : null, byGroup[g]);
       });
     } else {
       topics().forEach(function (t) {
         if (state.topic !== 'all' && state.topic !== t) return;
-        if (state.topic === 'all') listEl.appendChild(el('h3', 'pub-year-heading', t));
         // Within own and contributing groups, papers whose main topic is t come first.
         var main = function (x) { return topicsOf(x.p)[0] === t ? 1 : 0; };
-        pubs.map(function (p, i) { return { p: p, i: i }; })
+        var items = pubs.map(function (p, i) { return { p: p, i: i }; })
           .filter(function (x) { return topicsOf(x.p).indexOf(t) >= 0; })
           .sort(function (a, b) { return compare(a, b, function (a, b) { return main(b) - main(a); }); })
-          .forEach(function (x) { listEl.appendChild(card(x.p)); });
+          .map(function (x) { return x.p; });
+        appendGroup('topic:' + t, state.topic === 'all' ? t : null, items);
       });
     }
   }
+
 
   function years() {
     var list = pubs.map(function (p) { return p.year; })
