@@ -345,7 +345,7 @@ window.PUBLICATIONS = [
     "authors": "Shefali S. Verma, …, Bingxin Zhao, …, Joan M. O’Brien",
     "venue": "Cell",
     "year": 2024,
-    "topic": "Inter-organ Connections",
+    "topic": "Aging and Disease Risk",
     "highlights": [],
     "links": [
       {
@@ -359,7 +359,7 @@ window.PUBLICATIONS = [
     "authors": "Junhao Wen, …, Bingxin Zhao, …, Christos Davatzikos",
     "venue": "Nature Aging",
     "year": 2024,
-    "topic": "Inter-organ Connections",
+    "topic": "Aging and Disease Risk",
     "highlights": [],
     "links": [
       {
@@ -370,10 +370,11 @@ window.PUBLICATIONS = [
   },
   {
     "title": "UKB-MDRMF: a multi-disease risk and multimorbidity framework based on UK Biobank data",
-    "authors": "Yukang Jiang, Bingxin Zhao, …, Hongtu Zhu",
+    "authors": "Yukang Jiang*, Bingxin Zhao*, …, Hongtu Zhu",
+    "note": "*co-first authors",
     "venue": "Nature Communications",
     "year": 2025,
-    "topic": "Inter-organ Connections",
+    "topic": "Aging and Disease Risk",
     "highlights": [],
     "links": [
       {
@@ -387,7 +388,7 @@ window.PUBLICATIONS = [
     "authors": "Cameron Beeche, Bingxin Zhao, …, Julio A. Chirinos",
     "venue": "Circulation",
     "year": 2025,
-    "topic": "Inter-organ Connections",
+    "topic": "Aging and Disease Risk",
     "highlights": [],
     "links": [
       {
@@ -401,7 +402,7 @@ window.PUBLICATIONS = [
     "authors": "Cameron A. Beeche, …, Bingxin Zhao, …, Julio A. Chirinos",
     "venue": "Hypertension",
     "year": 2025,
-    "topic": "Inter-organ Connections",
+    "topic": "Aging and Disease Risk",
     "highlights": [],
     "links": [
       {
@@ -471,7 +472,7 @@ window.PUBLICATIONS = [
     "authors": "Meiyan Huang, …, Bingxin Zhao, …, Wenliang Pan",
     "venue": "Molecular Psychiatry",
     "year": 2026,
-    "topic": "Genetics of the Human Brain",
+    "topic": "Aging and Disease Risk",
     "highlights": [],
     "links": [
       {
@@ -485,7 +486,7 @@ window.PUBLICATIONS = [
     "authors": "Jakob Woerner, …, Bingxin Zhao, …, Dokyoon Kim",
     "venue": "Nature Genetics (accepted in principle)",
     "year": 2026,
-    "topic": "Statistical Methods and Theory",
+    "topic": "Aging and Disease Risk",
     "highlights": [],
     "links": [
       {
@@ -531,5 +532,6 @@ window.TOPIC_ORDER = [
   "Inter-organ Connections",
   "Genetics of the Human Brain",
   "Statistical Methods and Theory",
-  "AI for Science and Research Platforms"
+  "AI for Science and Research Platforms",
+  "Aging and Disease Risk"
 ];

@@ -27,10 +27,14 @@ GitHub Pages / DNS steps.
   Su are starred in the author list), as requested.
 - No preprints (arXiv, bioRxiv, medRxiv) in the research directions or paper cards; only
   published or accepted papers. Preprint platforms (PASS, TigerAI) stay under Platforms.
-- Topic tags match the four research directions. Their order on the paper list is set by
-  `window.TOPIC_ORDER` in publications.js: Inter-organ Connections; Genetics of the Human
-  Brain; Statistical Methods and Theory; AI for Science and Research Platforms. A paper may
-  list two topics (`topic` as an array); it then appears under both.
+- Topic tags: the four research directions plus "Aging and Disease Risk" (contributing-author
+  work on organ aging, multimorbidity, and disease risk). Order is set by `window.TOPIC_ORDER`
+  in publications.js: Inter-organ Connections; Genetics of the Human Brain; Statistical
+  Methods and Theory; AI for Science and Research Platforms; Aging and Disease Risk. A paper
+  may list two topics (`topic` as an array); it then appears under both.
+- The by Year view shows one group per year for the last five years and groups older papers
+  as "YYYY and earlier" (computed from the current year in script.js).
+- UKB-MDRMF carries a "*co-first authors" note (Yukang Jiang and Bingxin Zhao starred).
 - Paper highlights: short, at most two lines per paper, grouped by kind (journal features in
   one line, press coverage in another, awards as "YEAR Award Name"). Keep every link.
 - A News item about a paper ends with a one-sentence summary of the paper.

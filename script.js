@@ -106,6 +106,12 @@
     });
   }
 
+  // Year groups: one per year for the last five years, older papers together.
+  var CUTOFF = new Date().getFullYear() - 4;
+  function yearGroup(y) {
+    return y >= CUTOFF ? String(y) : String(CUTOFF - 1) + ' and earlier';
+  }
+
   function renderList() {
     listEl.textContent = '';
     if (state.mode === 'year') {
@@ -114,10 +120,11 @@
         .sort(function (a, b) { return b.p.year - a.p.year || a.i - b.i; });
       var current = null;
       sorted.forEach(function (x) {
-        if (state.year !== 'all' && String(x.p.year) !== state.year) return;
-        if (state.year === 'all' && x.p.year !== current) {
-          current = x.p.year;
-          listEl.appendChild(el('h3', 'pub-year-heading', String(current)));
+        var g = yearGroup(x.p.year);
+        if (state.year !== 'all' && g !== state.year) return;
+        if (state.year === 'all' && g !== current) {
+          current = g;
+          listEl.appendChild(el('h3', 'pub-year-heading', g));
         }
         listEl.appendChild(card(x.p));
       });
@@ -132,11 +139,10 @@
   }
 
   function years() {
-    var seen = [];
-    pubs.forEach(function (p) {
-      if (seen.indexOf(String(p.year)) < 0) seen.push(String(p.year));
-    });
-    return seen.sort(function (a, b) { return b - a; });
+    var list = pubs.map(function (p) { return p.year; })
+      .sort(function (a, b) { return b - a; })
+      .map(yearGroup);
+    return list.filter(function (g, i) { return list.indexOf(g) === i; });
   }
 
   // The second row of buttons: topics in the topic view, years in the year view.
