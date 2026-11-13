@@ -38,7 +38,9 @@ window.PUBLICATIONS = [
     "venue": "Nature Genetics",
     "year": 2026,
     "topic": "AI for Science and Research Platforms",
-    "highlights": [],
+    "highlights": [
+      "Discussed in an <a href=\"https://statsupai.org/quarto_web/site/posts/agentic-ai-genetics-interview.html\">interview with StatsUpAI</a>."
+    ],
     "links": [
       {
         "label": "Paper",
